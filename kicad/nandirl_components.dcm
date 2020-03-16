@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74ALVC00
+D NAND gate 4-channel 2-input
+$ENDCMP
+#
+#End Doc Library
