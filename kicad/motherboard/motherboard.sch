@@ -1276,28 +1276,28 @@ F 3 "~" H 4350 9800 50  0001 C CNN
 	1    4350 9800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3850 9800 0    50   Output ~ 0
+Text GLabel 5100 9800 2    50   Output ~ 0
 reset
 $Comp
 L Device:R_US R2
 U 1 1 5EA8D68F
-P 4000 9950
-F 0 "R2" V 3795 9950 50  0000 C CNN
-F 1 "2K" V 3886 9950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 4040 9940 50  0001 C CNN
-F 3 "~" H 4000 9950 50  0001 C CNN
-	1    4000 9950
+P 4850 9650
+F 0 "R2" V 4645 9650 50  0000 C CNN
+F 1 "2K" V 4736 9650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4890 9640 50  0001 C CNN
+F 3 "~" H 4850 9650 50  0001 C CNN
+	1    4850 9650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR054
 U 1 1 5EA903DA
-P 4000 10100
-F 0 "#PWR054" H 4000 9850 50  0001 C CNN
-F 1 "GND" H 4005 9927 50  0000 C CNN
-F 2 "" H 4000 10100 50  0001 C CNN
-F 3 "" H 4000 10100 50  0001 C CNN
-	1    4000 10100
+P 4000 9900
+F 0 "#PWR054" H 4000 9650 50  0001 C CNN
+F 1 "GND" H 4005 9727 50  0000 C CNN
+F 2 "" H 4000 9900 50  0001 C CNN
+F 3 "" H 4000 9900 50  0001 C CNN
+	1    4000 9900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1305,17 +1305,14 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR053
 U 1 1 5EA90EB0
-P 4850 9800
-F 0 "#PWR053" H 4850 9650 50  0001 C CNN
-F 1 "+3V3" H 4865 9973 50  0000 C CNN
-F 2 "" H 4850 9800 50  0001 C CNN
-F 3 "" H 4850 9800 50  0001 C CNN
-	1    4850 9800
+P 4850 9500
+F 0 "#PWR053" H 4850 9350 50  0001 C CNN
+F 1 "+3V3" H 4865 9673 50  0000 C CNN
+F 2 "" H 4850 9500 50  0001 C CNN
+F 3 "" H 4850 9500 50  0001 C CNN
+	1    4850 9500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 9800 4000 9800
-Connection ~ 4000 9800
 Wire Wire Line
 	4000 9800 4150 9800
 $Comp
@@ -1387,7 +1384,7 @@ Wire Wire Line
 	8600 10500 9000 10500
 Text Notes 9050 9300 2    50   ~ 0
 Power Input/Regulation
-Text Notes 4350 9300 2    50   ~ 0
+Text Notes 4600 9450 2    50   ~ 0
 Reset Switch
 Wire Wire Line
 	1750 4500 1750 4600
@@ -1510,9 +1507,9 @@ Text GLabel 4550 1200 2    50   Input ~ 0
 alu_out1
 Text GLabel 4550 1100 2    50   Input ~ 0
 alu_out0
-Text GLabel 4550 6950 2    50   Input ~ 0
-clk_b
 Text GLabel 4550 6850 2    50   Input ~ 0
+clk_b
+Text GLabel 4550 6950 2    50   Input ~ 0
 clk_a
 Text GLabel 4550 7050 2    50   Input ~ 0
 mem_load
@@ -1712,4 +1709,9 @@ NoConn ~ 4550 7350
 NoConn ~ 4550 7450
 NoConn ~ 4550 7550
 NoConn ~ 4550 7650
+Wire Wire Line
+	4850 9800 5100 9800
+Connection ~ 4850 9800
+Wire Wire Line
+	4000 9800 4000 9900
 $EndSCHEMATC
