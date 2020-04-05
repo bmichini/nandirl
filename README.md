@@ -1,10 +1,12 @@
 # nandirl
 Real-life hardware implementation of a the nand2tetris "Hack" computer architecture.
 
-##Chapter 0: nand2tetris and the "Hack" computer architecture
+## Chapter 0: nand2tetris and the "Hack" computer architecture
 Some background on the computer project: The design is based on a free online course [https://www.nand2tetris.org/](https://www.nand2tetris.org/) that guides students through the architecture of a simple computer based on NAND gates, which the authors have named the "Hack" computer. If you're wondering what a NAND gate is, [this is a good place to start](https://logic.ly/lessons/nand-gate/). The course subsequently takes students through the software implementation of Tetris for the Hack computer design. The course is awesome and I highly recommend it to anyone who wants to learn how computers work from the ground up. That said, there is no actual hardware and instead the computer is "implemented" using software that simulates hardware. The instructors don't focus on how you would build this computer in real life, and I haven't been able to find anyone on the internet who has actually done it. Hence I've named my project "nandirl".
 
 I figured a high-level overview of the computer architecture would be helpful to understand how all the components I'll be talking about will ultimately fit together. Check out the course for a better explanation (it assumes no previous technical training or computer knowledge). 
+
+Side note: Inspired by Apollo Guidance Computer
 
 In subsequent chapters I'll be building out each one of the major components in this architecture. A preview is below!
 
@@ -21,7 +23,7 @@ In subsequent chapters I'll be building out each one of the major components in 
 - Chapter 11: Assembling Components onto the PCBs
 - Chapter 12: Testing the Components
 
-##Chapter 1: 1-bit Register
+## Chapter 1: 1-bit Register
 One of the most basic things a computer needs to do is remember things, and it does this by storing "bits" i.e. 0's and 1's. One of the core components of a computer processor that performs this remembering function is called a "register". A 1-bit register has the ability to store 1-bit of information, i.e. it remembers whether it is currently a 0 or currently a 1. There are a few key details of a 1-bit register:
 * Input: The register takes a digital input, i.e. a 3.3V signal that is either low (0V-0.8V, representing a 0) or high (2.0V-3.3V, representing a 1).
 * Load: The register does not always "listen" to its input. The Load signal (again, a digital 3.3V signal) tells the register whether to accept the input (Load=1) or ignore the input (Load=0) and retain its current value. The reason for this is that there will always be some signal on the input, but the computer may not always want a register to store that signal at given time.
@@ -54,23 +56,23 @@ In summary, a 1-bit register circuit takes 12 total NAND gates to implement (8 f
 
 Here's a video showing a breadboard prototype of the circuit using larger DIP versions of the quad NAND chips. The Red LED is connected to the output, Green is Load, Yellow is Input, and Blue is Clock. You'll notice that the output doesn't change until the clock goes from On to Off (the falling edge). When this happens, the Output will either match the current Input (if Load is On), or it will keep its previous value (if Load is Off). FYI The little red switches that I'm using to set Input and Load are called "DIP switches". Having designed and prototyped a 1-bit register, the next chapter will put 16 of these together to form a 16-bit register, and go through the process of designing a printed circuit board (PCB) that can be custom manufactured!
 
-Chapter 2: 16-bit Register
+## Chapter 2: 16-bit Register
 The nand2tetris computer is a 16-bit architecture. That means that data is passed around, stored, and manipulated in groups of 16-bits. The first full component of the computer I decided to take on is the 16-bit Register. It is, quite simply, a board that contains 16 1-bit registers where each register has its own Input and Output signals, but the Load and Clock signals are shared between all of them.
 
-##Chapter 3: Program Counter
+## Chapter 3: Program Counter
 
-##Chapter 4: Read-only Memory (ROM)
+## Chapter 4: Read-only Memory (ROM)
 
-##Chapter 5: Random Access Memory (RAM)
+## Chapter 5: Random Access Memory (RAM)
 
-##Chapter 6: Arithmetic Logic Unit (ALU)
+## Chapter 6: Arithmetic Logic Unit (ALU)
 
-##Chapter 7: Clock Generator
+## Chapter 7: Clock Generator
 
-##Chapter 8: Motherboard
+## Chapter 8: Motherboard
 
-##Chapter 9: Debugger
+## Chapter 9: Debugger
 
-##Chapter 10: Getting the PCBs Fabricated
+## Chapter 10: Getting the PCBs Fabricated
 
-##Chapter 11: Assembling Components onto the PCBs
+## Chapter 11: Assembling Components onto the PCBs

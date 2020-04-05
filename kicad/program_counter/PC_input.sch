@@ -1,0 +1,239 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 17 17
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5800 3400 0    50   Input ~ 0
+in
+Text HLabel 1800 3300 0    50   Input ~ 0
+c_in
+Text HLabel 1800 3400 0    50   Input ~ 0
+from_regout
+Text HLabel 5300 3350 2    50   Output ~ 0
+c_out
+Text HLabel 9150 3350 2    50   Output ~ 0
+to_regin
+$Comp
+L NANDIRL_components:SN74ALVC00 U?
+U 1 1 5EA46505
+P 5800 2650
+F 0 "U?" H 6450 2300 50  0000 C CNN
+F 1 "SN74ALVC00" H 4850 2300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5550 1150 50  0001 C CNN
+F 3 "" H 5800 2650 50  0001 C CNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 3300 0    50   Input ~ 0
+load
+Text GLabel 4600 3850 0    50   Input ~ 0
+not_load
+Wire Wire Line
+	4600 3850 4800 3850
+$Comp
+L NANDIRL_components:SN74ALVC00 U?
+U 1 1 5EA48CF1
+P 3050 2650
+F 0 "U?" H 3650 2300 50  0000 C CNN
+F 1 "SN74ALVC00" H 2150 2300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2800 1150 50  0001 C CNN
+F 3 "" H 3050 2650 50  0001 C CNN
+	1    3050 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3800 5550 3850
+Wire Wire Line
+	5550 3850 5800 3850
+Wire Wire Line
+	5300 3800 5550 3800
+Wire Wire Line
+	1800 3400 1850 3400
+Wire Wire Line
+	2050 3300 2050 3200
+Wire Wire Line
+	2050 3200 2800 3200
+Wire Wire Line
+	2800 3200 2800 3300
+Wire Wire Line
+	2800 3300 3050 3300
+Connection ~ 2050 3300
+Wire Wire Line
+	1800 3300 2050 3300
+Wire Wire Line
+	2550 3350 2600 3350
+Wire Wire Line
+	2750 3350 2750 3400
+Wire Wire Line
+	2750 3400 3050 3400
+Wire Wire Line
+	1850 3400 1850 3850
+Wire Wire Line
+	1850 3850 2050 3850
+Connection ~ 1850 3400
+Wire Wire Line
+	1850 3400 2050 3400
+Wire Wire Line
+	2600 3350 2600 3500
+Wire Wire Line
+	2600 3650 2050 3650
+Wire Wire Line
+	2050 3650 2050 3750
+Connection ~ 2600 3350
+Wire Wire Line
+	2600 3350 2750 3350
+Wire Wire Line
+	3550 3350 3550 3600
+Wire Wire Line
+	3550 3600 3050 3600
+Wire Wire Line
+	3050 3600 3050 3750
+Wire Wire Line
+	2550 3800 2800 3800
+Wire Wire Line
+	2800 3800 2800 3850
+Wire Wire Line
+	2800 3850 3050 3850
+Wire Wire Line
+	3550 3800 3950 3800
+Wire Wire Line
+	3950 3800 3950 3750
+Wire Wire Line
+	3950 3750 4800 3750
+Text Label 4100 3750 2    50   ~ 0
+sum
+Wire Wire Line
+	2600 3500 4400 3500
+Wire Wire Line
+	4400 3500 4400 3300
+Wire Wire Line
+	4400 3300 4800 3300
+Connection ~ 2600 3500
+Wire Wire Line
+	2600 3500 2600 3650
+Wire Wire Line
+	4800 3300 4800 3400
+Connection ~ 4800 3300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA5AD10
+P 2800 2950
+F 0 "#PWR?" H 2800 2800 50  0001 C CNN
+F 1 "+3V3" H 2815 3123 50  0000 C CNN
+F 2 "" H 2800 2950 50  0001 C CNN
+F 3 "" H 2800 2950 50  0001 C CNN
+	1    2800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA5AF7B
+P 5550 2950
+F 0 "#PWR?" H 5550 2800 50  0001 C CNN
+F 1 "+3V3" H 5565 3123 50  0000 C CNN
+F 2 "" H 5550 2950 50  0001 C CNN
+F 3 "" H 5550 2950 50  0001 C CNN
+	1    5550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA5B1EF
+P 2800 4200
+F 0 "#PWR?" H 2800 3950 50  0001 C CNN
+F 1 "GND" H 2805 4027 50  0000 C CNN
+F 2 "" H 2800 4200 50  0001 C CNN
+F 3 "" H 2800 4200 50  0001 C CNN
+	1    2800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA5B47C
+P 5550 4200
+F 0 "#PWR?" H 5550 3950 50  0001 C CNN
+F 1 "GND" H 5555 4027 50  0000 C CNN
+F 2 "" H 5550 4200 50  0001 C CNN
+F 3 "" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3350 6300 3600
+Wire Wire Line
+	6300 3600 5800 3600
+Wire Wire Line
+	5800 3600 5800 3750
+$Comp
+L NANDIRL_components:SN74ALVC00 U?
+U 1 1 5EA5EBE6
+P 8400 2650
+F 0 "U?" H 8175 2531 50  0000 C CNN
+F 1 "SN74ALVC00" H 8175 2440 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8150 1150 50  0001 C CNN
+F 3 "" H 8400 2650 50  0001 C CNN
+	1    8400 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 3300 0    50   Input ~ 0
+reset
+Wire Wire Line
+	7200 3300 7400 3300
+Wire Wire Line
+	6300 3800 7050 3800
+Wire Wire Line
+	7050 3800 7050 3400
+Wire Wire Line
+	7050 3400 7400 3400
+Wire Wire Line
+	7900 3350 8400 3350
+Wire Wire Line
+	8400 3350 8400 3300
+Wire Wire Line
+	8400 3400 8400 3350
+Connection ~ 8400 3350
+Wire Wire Line
+	8900 3350 9150 3350
+Wire Notes Line
+	1250 2300 1250 4450
+Wire Notes Line
+	1250 4450 4200 4450
+Wire Notes Line
+	4200 4450 4200 3600
+Wire Notes Line
+	4200 3600 5600 3600
+Wire Notes Line
+	5600 3600 5600 2300
+Wire Notes Line
+	5600 2300 1250 2300
+Wire Notes Line
+	5650 2300 5650 3650
+Wire Notes Line
+	5650 3650 4250 3650
+Wire Notes Line
+	4250 3650 4250 4450
+Wire Notes Line
+	4250 4450 6800 4450
+Wire Notes Line
+	6800 4450 6800 2300
+Wire Notes Line
+	6800 2300 5650 2300
+Wire Notes Line
+	6900 2300 6900 3550
+Wire Notes Line
+	6900 3550 9650 3550
+Wire Notes Line
+	9650 3550 9650 2300
+Wire Notes Line
+	9650 2300 6900 2300
+$EndSCHEMATC
