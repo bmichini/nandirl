@@ -423,34 +423,25 @@ pc_out14
 $Comp
 L power:GND #PWR08
 U 1 1 5E9B7F66
-P 10000 2700
-F 0 "#PWR08" H 10000 2450 50  0001 C CNN
-F 1 "GND" H 10005 2527 50  0000 C CNN
-F 2 "" H 10000 2700 50  0001 C CNN
-F 3 "" H 10000 2700 50  0001 C CNN
-	1    10000 2700
+P 9700 2700
+F 0 "#PWR08" H 9700 2450 50  0001 C CNN
+F 1 "GND" H 9705 2527 50  0000 C CNN
+F 2 "" H 9700 2700 50  0001 C CNN
+F 3 "" H 9700 2700 50  0001 C CNN
+	1    9700 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR07
 U 1 1 5E9B7F6C
-P 9800 2900
-F 0 "#PWR07" H 9800 2750 50  0001 C CNN
-F 1 "+3V3" H 9815 3073 50  0000 C CNN
-F 2 "" H 9800 2900 50  0001 C CNN
-F 3 "" H 9800 2900 50  0001 C CNN
-	1    9800 2900
+P 9500 2900
+F 0 "#PWR07" H 9500 2750 50  0001 C CNN
+F 1 "+3V3" H 9515 3073 50  0000 C CNN
+F 2 "" H 9500 2900 50  0001 C CNN
+F 3 "" H 9500 2900 50  0001 C CNN
+	1    9500 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 2700 10550 2700
-Wire Wire Line
-	10550 2900 9800 2900
-Connection ~ 10550 2700
-Wire Wire Line
-	10550 2700 10550 2800
-NoConn ~ 10550 3000
-NoConn ~ 10550 3100
 $Comp
 L Connector:DB37_Female J5
 U 1 1 5E7CA902
@@ -1202,43 +1193,18 @@ clk_a
 Text GLabel 7800 8550 0    50   Output ~ 0
 clk_b
 Wire Wire Line
-	7800 8750 7800 8650
-Wire Wire Line
-	7800 8650 6700 8650
-Wire Wire Line
-	6700 8650 6700 8700
-Connection ~ 7800 8650
+	7350 8850 7350 8900
 $Comp
 L power:GND #PWR049
 U 1 1 5E99A741
-P 6700 8700
-F 0 "#PWR049" H 6700 8450 50  0001 C CNN
-F 1 "GND" H 6705 8527 50  0000 C CNN
-F 2 "" H 6700 8700 50  0001 C CNN
-F 3 "" H 6700 8700 50  0001 C CNN
-	1    6700 8700
+P 7350 8900
+F 0 "#PWR049" H 7350 8650 50  0001 C CNN
+F 1 "GND" H 7355 8727 50  0000 C CNN
+F 2 "" H 7350 8900 50  0001 C CNN
+F 3 "" H 7350 8900 50  0001 C CNN
+	1    7350 8900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 8850 7350 8850
-$Comp
-L power:+3V3 #PWR050
-U 1 1 5E99BD1A
-P 7350 8850
-F 0 "#PWR050" H 7350 8700 50  0001 C CNN
-F 1 "+3V3" H 7200 8950 50  0000 C CNN
-F 2 "" H 7350 8850 50  0001 C CNN
-F 3 "" H 7350 8850 50  0001 C CNN
-	1    7350 8850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 1050 7800 1150
-Wire Wire Line
-	7800 1150 6700 1150
-Connection ~ 7800 1150
-Wire Wire Line
-	6700 1150 6700 1200
 $Comp
 L power:GND #PWR052
 U 1 1 5E99FE8F
@@ -1581,7 +1547,6 @@ F 3 "" H 5200 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1750 6900
-NoConn ~ 10550 2600
 $Comp
 L Device:CP1 C2
 U 1 1 5E84D7C9
@@ -1702,7 +1667,6 @@ Text GLabel 7800 1250 0    50   Output ~ 0
 pc_inc
 Text GLabel 7800 1350 0    50   Output ~ 0
 reset
-NoConn ~ 7800 5250
 NoConn ~ 4550 7150
 NoConn ~ 4550 7250
 NoConn ~ 4550 7350
@@ -1714,4 +1678,34 @@ Wire Wire Line
 Connection ~ 4850 9800
 Wire Wire Line
 	4000 9800 4000 9900
+Text GLabel 10550 2600 0    50   Input ~ 0
+rom_addr15
+Wire Wire Line
+	9800 2800 9800 2700
+Wire Wire Line
+	9800 2700 9700 2700
+Wire Wire Line
+	9800 2800 10550 2800
+Wire Wire Line
+	9500 2900 10550 2900
+Text GLabel 10550 2700 0    50   Input ~ 0
+rom_addr16
+Text GLabel 10550 3000 0    50   Input ~ 0
+rom_oe
+Text GLabel 10550 3100 0    50   Input ~ 0
+rom_we
+Text GLabel 7800 1150 0    50   Output ~ 0
+rom_oe
+Text GLabel 7800 5250 0    50   Output ~ 0
+rom_we
+Text GLabel 7800 8650 0    50   Output ~ 0
+rom_addr15
+Text GLabel 7800 8750 0    50   Output ~ 0
+rom_addr16
+Wire Wire Line
+	7800 8850 7350 8850
+Wire Wire Line
+	7800 1050 6700 1050
+Wire Wire Line
+	6700 1050 6700 1200
 $EndSCHEMATC
