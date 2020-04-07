@@ -186,13 +186,13 @@ Wire Wire Line
 	3300 2200 3450 2200
 Connection ~ 3950 2600
 Text GLabel 4150 1550 2    50   Output ~ 0
-clk_a
+clk_b
 Wire Wire Line
 	3950 2150 3950 1550
 Wire Wire Line
 	3950 1550 4150 1550
 Text GLabel 7150 2150 2    50   Output ~ 0
-clk_b
+clk_a
 Wire Wire Line
 	3000 5600 3050 5600
 $Comp
