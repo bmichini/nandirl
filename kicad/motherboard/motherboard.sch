@@ -641,7 +641,6 @@ Wire Wire Line
 Wire Wire Line
 	6500 10500 6900 10500
 Connection ~ 6500 10500
-NoConn ~ 6500 10100
 $Sheet
 S 11250 6050 750  3350
 U 5E81995D
@@ -1208,25 +1207,12 @@ $EndComp
 $Comp
 L power:GND #PWR052
 U 1 1 5E99FE8F
-P 6700 1200
-F 0 "#PWR052" H 6700 950 50  0001 C CNN
-F 1 "GND" H 6705 1027 50  0000 C CNN
-F 2 "" H 6700 1200 50  0001 C CNN
-F 3 "" H 6700 1200 50  0001 C CNN
-	1    6700 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 950  7350 950 
-$Comp
-L power:+3V3 #PWR051
-U 1 1 5E9A1A48
-P 7350 950
-F 0 "#PWR051" H 7350 800 50  0001 C CNN
-F 1 "+3V3" H 7200 1050 50  0000 C CNN
-F 2 "" H 7350 950 50  0001 C CNN
-F 3 "" H 7350 950 50  0001 C CNN
-	1    7350 950 
+P 6700 1100
+F 0 "#PWR052" H 6700 850 50  0001 C CNN
+F 1 "GND" H 6705 927 50  0000 C CNN
+F 2 "" H 6700 1100 50  0001 C CNN
+F 3 "" H 6700 1100 50  0001 C CNN
+	1    6700 1100
 	1    0    0    -1  
 $EndComp
 Text Notes 7700 650  0    50   ~ 0
@@ -1546,7 +1532,6 @@ F 3 "" H 5200 4700 50  0001 C CNN
 	1    5200 4700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1750 6900
 $Comp
 L Device:CP1 C2
 U 1 1 5E84D7C9
@@ -1705,7 +1690,13 @@ rom_addr16
 Wire Wire Line
 	7800 8850 7350 8850
 Wire Wire Line
-	7800 1050 6700 1050
+	7800 950  6700 950 
 Wire Wire Line
-	6700 1050 6700 1200
+	6700 950  6700 1100
+Text GLabel 6500 10100 2    50   Input ~ 0
+clk_oe
+Text GLabel 7800 1050 0    50   Output ~ 0
+clk_oe
+Text GLabel 1750 6900 2    50   Input ~ 0
+inst_15
 $EndSCHEMATC
