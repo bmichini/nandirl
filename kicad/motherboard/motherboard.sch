@@ -1532,7 +1532,6 @@ F 3 "" H 5200 4700 50  0001 C CNN
 	1    5200 4700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1750 6900
 $Comp
 L Device:CP1 C2
 U 1 1 5E84D7C9
@@ -1698,4 +1697,6 @@ Text GLabel 6500 10100 2    50   Input ~ 0
 clk_oe
 Text GLabel 7800 1050 0    50   Output ~ 0
 clk_oe
+Text GLabel 1750 6900 2    50   Input ~ 0
+inst_15
 $EndSCHEMATC
