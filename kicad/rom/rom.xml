@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/buddy/projects/nandirl/kicad/rom/rom.sch</source>
+    <date>Tue 21 Apr 2020 07:57:43 PM PDT</date>
+    <tool>Eeschema 5.1.5-52549c5~84~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>16-bit Register</title>
+        <company/>
+        <rev>0.1</rev>
+        <date>2020-03-15</date>
+        <source>rom.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">P15797CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E7D554F</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">BC5229CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E7D725F</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>DB37_Male</value>
+      <footprint>Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm</footprint>
+      <datasheet> ~</datasheet>
+      <fields>
+        <field name="Digikey PN">AE10986-ND</field>
+      </fields>
+      <libsource lib="Connector" part="DB37_Male" description="37-pin male D-SUB connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E7F94CF</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>SST39VF200A</value>
+      <footprint>Package_SO:TSOP-I-48_18.4x12mm_P0.5mm</footprint>
+      <fields>
+        <field name="Digikey PN">SST39VF200A-70-4I-EKE-ND</field>
+      </fields>
+      <libsource lib="NANDIRL_components" part="SST39VF200A" description="Flash 2Mb (128K x 16)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93A928</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>5K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">P5.1KECT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9AEBD1</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>5K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">P5.1KECT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9B73DC</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>5K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">P5.1KECT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9CEF52</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>5K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey PN">P5.1KECT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9D7D63</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="DB37_Male">
+      <description>37-pin male D-SUB connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>DSUB*Male*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DB37_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="15" type="passive"/>
+        <pin num="16" name="16" type="passive"/>
+        <pin num="17" name="17" type="passive"/>
+        <pin num="18" name="18" type="passive"/>
+        <pin num="19" name="19" type="passive"/>
+        <pin num="20" name="20" type="passive"/>
+        <pin num="21" name="21" type="passive"/>
+        <pin num="22" name="22" type="passive"/>
+        <pin num="23" name="23" type="passive"/>
+        <pin num="24" name="24" type="passive"/>
+        <pin num="25" name="25" type="passive"/>
+        <pin num="26" name="26" type="passive"/>
+        <pin num="27" name="27" type="passive"/>
+        <pin num="28" name="28" type="passive"/>
+        <pin num="29" name="29" type="passive"/>
+        <pin num="30" name="30" type="passive"/>
+        <pin num="31" name="31" type="passive"/>
+        <pin num="32" name="32" type="passive"/>
+        <pin num="33" name="33" type="passive"/>
+        <pin num="34" name="34" type="passive"/>
+        <pin num="35" name="35" type="passive"/>
+        <pin num="36" name="36" type="passive"/>
+        <pin num="37" name="37" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NANDIRL_components" part="SST39VF200A">
+      <description>Flash 2Mb (128K x 16)</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SST39VF200A</field>
+        <field name="Footprint">Package_SO:TSOP-I-48_18.4x12mm_P0.5mm</field>
+        <field name="Digikey PN">SST39VF200A-70-4I-EKE-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A15" type="input"/>
+        <pin num="2" name="A14" type="input"/>
+        <pin num="3" name="A13" type="input"/>
+        <pin num="4" name="A12" type="input"/>
+        <pin num="5" name="A11" type="input"/>
+        <pin num="6" name="A10" type="input"/>
+        <pin num="7" name="A9" type="input"/>
+        <pin num="8" name="A8" type="input"/>
+        <pin num="9" name="NC" type="NotConnected"/>
+        <pin num="10" name="NC" type="NotConnected"/>
+        <pin num="11" name="WE" type="input"/>
+        <pin num="12" name="NC" type="NotConnected"/>
+        <pin num="13" name="NC" type="NotConnected"/>
+        <pin num="14" name="NC" type="NotConnected"/>
+        <pin num="15" name="NC" type="NotConnected"/>
+        <pin num="16" name="NC" type="NotConnected"/>
+        <pin num="17" name="NC" type="NotConnected"/>
+        <pin num="18" name="A7" type="input"/>
+        <pin num="19" name="A6" type="input"/>
+        <pin num="20" name="A5" type="input"/>
+        <pin num="21" name="A4" type="input"/>
+        <pin num="22" name="A3" type="input"/>
+        <pin num="23" name="A2" type="input"/>
+        <pin num="24" name="A1" type="input"/>
+        <pin num="25" name="A0" type="input"/>
+        <pin num="26" name="CE" type="input"/>
+        <pin num="27" name="VSS/GND" type="power_in"/>
+        <pin num="28" name="OE" type="input"/>
+        <pin num="29" name="DQ0" type="output"/>
+        <pin num="30" name="DQ8" type="output"/>
+        <pin num="31" name="DQ1" type="output"/>
+        <pin num="32" name="DQ9" type="output"/>
+        <pin num="33" name="DQ2" type="output"/>
+        <pin num="34" name="DQ10" type="output"/>
+        <pin num="35" name="DQ3" type="output"/>
+        <pin num="36" name="DQ11" type="output"/>
+        <pin num="37" name="VDD/3V3" type="power_in"/>
+        <pin num="38" name="DQ4" type="output"/>
+        <pin num="39" name="DQ12" type="output"/>
+        <pin num="40" name="DQ5" type="output"/>
+        <pin num="41" name="DQ13" type="output"/>
+        <pin num="42" name="DQ6" type="output"/>
+        <pin num="43" name="DQ14" type="output"/>
+        <pin num="44" name="DQ7" type="output"/>
+        <pin num="45" name="DQ15" type="output"/>
+        <pin num="46" name="VSS/GND" type="power_in"/>
+        <pin num="47" name="NC" type="NotConnected"/>
+        <pin num="48" name="A16" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="NANDIRL_components">
+      <uri>/home/buddy/projects/nandirl/kicad/nandirl_components.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="addr_10">
+      <node ref="U1" pin="6"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="2" name="addr_9">
+      <node ref="U1" pin="7"/>
+      <node ref="J1" pin="22"/>
+    </net>
+    <net code="3" name="addr_8">
+      <node ref="U1" pin="8"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="5" name="addr_11">
+      <node ref="J1" pin="21"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="6" name="data_11">
+      <node ref="J1" pin="32"/>
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="7" name="addr_1">
+      <node ref="J1" pin="26"/>
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="8" name="addr_0">
+      <node ref="J1" pin="8"/>
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="9" name="data_0">
+      <node ref="J1" pin="19"/>
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="10" name="addr_13">
+      <node ref="U1" pin="3"/>
+      <node ref="J1" pin="20"/>
+    </net>
+    <net code="11" name="data_8">
+      <node ref="U1" pin="30"/>
+      <node ref="J1" pin="15"/>
+    </net>
+    <net code="12" name="data_1">
+      <node ref="U1" pin="31"/>
+      <node ref="J1" pin="37"/>
+    </net>
+    <net code="13" name="data_9">
+      <node ref="J1" pin="33"/>
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="14" name="data_2">
+      <node ref="U1" pin="33"/>
+      <node ref="J1" pin="18"/>
+    </net>
+    <net code="15" name="data_10">
+      <node ref="J1" pin="14"/>
+      <node ref="U1" pin="34"/>
+    </net>
+    <net code="16" name="data_3">
+      <node ref="J1" pin="36"/>
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="17" name="+3V3">
+      <node ref="C2" pin="1"/>
+      <node ref="J1" pin="10"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="37"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="18" name="data_4">
+      <node ref="U1" pin="38"/>
+      <node ref="J1" pin="17"/>
+    </net>
+    <net code="19" name="data_12">
+      <node ref="J1" pin="13"/>
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="20" name="addr_12">
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="21" name="data_5">
+      <node ref="J1" pin="35"/>
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="22" name="data_13">
+      <node ref="J1" pin="31"/>
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="23" name="data_6">
+      <node ref="U1" pin="42"/>
+      <node ref="J1" pin="16"/>
+    </net>
+    <net code="24" name="data_14">
+      <node ref="U1" pin="43"/>
+      <node ref="J1" pin="12"/>
+    </net>
+    <net code="25" name="data_7">
+      <node ref="J1" pin="34"/>
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="26" name="data_15">
+      <node ref="U1" pin="45"/>
+      <node ref="J1" pin="30"/>
+    </net>
+    <net code="27" name="Net-(U1-Pad47)">
+      <node ref="U1" pin="47"/>
+    </net>
+    <net code="28" name="addr_16">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="48"/>
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="29" name="GND">
+      <node ref="J1" pin="28"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="27"/>
+      <node ref="U1" pin="46"/>
+      <node ref="U1" pin="26"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="30" name="WE">
+      <node ref="U1" pin="11"/>
+      <node ref="R1" pin="2"/>
+      <node ref="J1" pin="11"/>
+    </net>
+    <net code="31" name="addr_15">
+      <node ref="U1" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="J1" pin="27"/>
+    </net>
+    <net code="32" name="addr_2">
+      <node ref="J1" pin="7"/>
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="33" name="OE">
+      <node ref="J1" pin="29"/>
+      <node ref="U1" pin="28"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="34" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="35" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="36" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="37" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="38" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="39" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="40" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="41" name="addr_7">
+      <node ref="J1" pin="23"/>
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="42" name="addr_6">
+      <node ref="U1" pin="19"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="43" name="addr_14">
+      <node ref="U1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="44" name="addr_5">
+      <node ref="U1" pin="20"/>
+      <node ref="J1" pin="24"/>
+    </net>
+    <net code="45" name="addr_4">
+      <node ref="U1" pin="21"/>
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="46" name="addr_3">
+      <node ref="U1" pin="22"/>
+      <node ref="J1" pin="25"/>
+    </net>
+  </nets>
+</export>

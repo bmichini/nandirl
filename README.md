@@ -1,15 +1,15 @@
 # nandirl
-Real-life hardware implementation of a the nand2tetris "Hack" computer architecture.
+Real-life hardware implementation of the nand2tetris "Hack" computer architecture.
 
 ## Chapter 0: nand2tetris and the "Hack" computer architecture
-Recently I've been obsessed with the Apollo spaceflight program, and of particular fascination to me is the Apollo Guidance Computer (AGC). There's a whole lot to say on the topic, but for the purposes of this introduction: I was reading one day that the logic circuits of the AGC are constructed entirely from NOR (Not OR) gates. That's when it hit me -- despite having known how to program them for over 20 years, *I had no idea how computers actually worked*. I decided that I could no longer continue living in ignorance of a technology that so profoundly shapes our everyday lives. So I'm endeavoring to learn how computers work by constructing one from primitive logic gates, but instead of the NOR gates used on the AGC my computer will be made from NAND (Not AND) gates.
+Recently I've been obsessed with the Apollo spaceflight program, and of particular fascination to me is the Apollo Guidance Computer (AGC). There's a whole lot to say on the topic, but for the purposes of this introduction: I was reading one day that the logic circuits of the AGC are constructed entirely from NOR (Not OR) gates. What's a NOR gate? How could you make a computer out of them? What are logic circuits? That's when it hit me -- even though I've been programming them for over 20 years, *I have no idea how computers actually work in hardware*. I decided that I could no longer continue living in ignorance of a technology that so profoundly shapes our everyday lives. So I have endeavored to learn how computers work by constructing one from primitive logic gates, but instead of the NOR gates used on the AGC my computer will be made from NAND (Not AND) gates.
 
-Starting out I obviously had no idea what goes into the design of such a computer, but lucky for me there are some wonderful and generous people out there who have gone out of their way to provide a comprehensive and free online course on the topic. The design I'll be using for my computer is based on the [nand2tetris](https://www.nand2tetris.org/) project that guides students through the architecture of a simple computer based on NAND gates, which the authors have named the "Hack" computer. If you're wondering what a NAND gate is, [this is a good place to start](https://logic.ly/lessons/nand-gate/). The lectures subsequently take students through the software implementation of Tetris for the Hack computer design. The course is awesome and I highly recommend it to anyone who wants to learn how computers work from the ground up. Given that the syllabus is focused on computer *design*, there is no actual hardware and instead the computer is constructed using software that simulates hardware. The instructors don't focus on how you would build this computer *in real life*, and I haven't been able to find anyone on the internet who has actually done it. Hence I've named my project **nandirl**.
+Starting out I obviously had no idea what goes into the design of such a computer, but luckily there are some wonderful and generous people out there who have gone out of their way to provide a comprehensive and free online course on the topic. The design I'll be using for my computer is based on the [nand2tetris](https://www.nand2tetris.org/) project that guides students through the architecture of a simple computer based on NAND gates, which the authors have named the "Hack" computer. If you're wondering what a NAND gate is, [this is a good place to start](https://logic.ly/lessons/nand-gate/). The lectures subsequently take students through the software implementation of Tetris for the Hack computer design. The course is awesome and I highly recommend it to anyone who wants to learn how computers work from the ground up. Given that the syllabus is focused on computer *design*, there is no actual hardware and instead the computer is constructed using software that simulates hardware. The instructors don't focus on how you would build this computer *in real life*, and I haven't been able to find anyone on the internet who has actually done it. Hence I've named my project **nandirl**.
 
 The remainder of this chapter is a high-level overview of the computer architecture that may be helpful in understanding how all of the components will ultimately fit together. Check out the [nand2tetris](https://www.nand2tetris.org/) course for a better explanation (it assumes no previous technical training or computer knowledge). 
 
-If we zoom out all the way, a basic computer consists of these three components:
-![Basic Computer Architecture](ComputerArch1.png) 
+If we zoom out all the way, our computer consists of these three main components:
+![Basic Computer Architecture](images/ComputerArch1.png) 
 
 ###ROM###
 ROM stands for "Read Only Memory". The ROM chip has a simple job in life -- given an *address*, the ROM provides an *instruction*. An address is simply a number, as is an instruction. Abstractly, imagine the ROM chip as a filing cabinet with many folders inside of it. The ROM chip gets an address, looks for the folder with the matching label, and hands back the contents of that folder (the instruction).
@@ -20,12 +20,12 @@ ROM stands for "Read Only Memory". The ROM chip has a simple job in life -- give
 >Since we've used three powers of 2, this is a *3-bit *binary number. The more powers of two we use the more numbers we can represent with our computer. The Hack computer, and thus the nandirl computer, is a *16-bit architecture*. Thus the smallest (unsigned) number we can represent is **0000 0000 0000 0000**:
  **0**x2^15^ +**0**x2^14^ + **0**x2^13^ + **0**x2^12^+ **0**x2^11^ +**0**x2^10^ + **0**x2^9^ + **0**x2^8^+ **0**x2^7^ +**0**x2^6^ + **0**x2^5^ + **0**x2^4^+ **0**x2^3^ +**0**x2^2^ + **0**x2^1^ + **0**x2^0^ = 0
 >
->and biggest (unsigned) number our computer can represent is **1111 1111 1111 1111**:
+>and largest (unsigned) number our computer can represent is **1111 1111 1111 1111**:
  **1**x2^15^ +**1**x2^14^ + **1**x2^13^ + **1**x2^12^+ **1**x2^11^ +**1**x2^10^ + **1**x2^9^ + **1**x2^8^+ **1**x2^7^ +**1**x2^6^ + **1**x2^5^ + **1**x2^4^+ **1**x2^3^ +**1**x2^2^ + **1**x2^1^ + **1**x2^0^ = 65535
 >
->As it turns out, we can also represent every number in between! 
+>As it turns out, we can also represent every number in between with the right combination of 16 **1**'s and **0**'s, i.e. by adding the right combination of powers of 2 between 2^0^ and 2^15^! 
 
-Back to the ROM chip. The *address* passed into the ROM chip takes the form of 16 digital electrical signals, each at either a low voltage (representing a 0) or a high voltage (representing a 1). That corresponds to a 16-bit binary number, thus our ROM chip can store 65536 unique instructions! The instruction output, similarly, takes the form of 16 digital electrical signals. Each of those 16 individual instruction signals are going to tell the CPU what to do.
+Back to the ROM chip. The *address* passed into the ROM chip takes the form of 16 digital electrical signals, each at either a low voltage (representing a 0) or a high voltage (representing a 1). That corresponds to a 16-bit binary number, thus our ROM chip can store 65536 unique instructions! The *instruction* output, similarly, takes the form of 16 digital electrical signals. Each of those 16 individual instruction signals are going to tell the CPU what to do.
 
 So to recap, ROM gets a 16-bit address. It finds that address in its filing cabinet and outputs the contents, which happens to be another set of 16 bits. Get a new address, look in a new memory location, send out a new instruction. In real life the 16 bits are represented as either high or low voltage (electrical potential) transmitted via 16 tiny metal wires going into the chip and 16 going out. It's called *read-only* memory because the contents of the memory does not change throughout the course of the computer's execution (it can only be *read*, not *written*). The 16-bits of instruction will go on to tell the CPU what to do, hence the ROM chip contains the *program* that the computer will execute. As a final note, ROM chips retain their memory even when the computer is powered off, so that the ROM will reliably provide the same addressed instruction data each and every time the computer is turned on.
 
@@ -61,7 +61,7 @@ One of the most basic things a computer needs to do is remember things, and it d
 
 The nand2tetris course materials say very little about the actual hardware implementation of a register. The concept of a "Data Flip-flop" (or DFF) is given as a primitive building block without really saying how it works. Luckily, a DFF-based circuit that has a data input and updates its output on a clock signal edge can be implemented from NAND gates (with the help of the internet, of course). I based my DFF NAND implementation on [this helpful site](https://www.electronics-tutorials.ws/sequential/seq_4.html). The image below shows the implementation, a Data Flip-Flop followed by a Set-Reset Flip-Flop. The DFF is essentially the input stage, it is listening to the Data input when the clock is high. The instant the clock goes low the DFF stops listening to its input and a few nanoseconds later (the propagation delay from the Not gate on the clock input) the SRFF starts listening to its inputs, setting the overall output of the register. Hence the output updates itself precisely on the falling edge (the transition from high to low) of the clock signal.
 
-![DFF SR Latch circuit](DFF_NAND.png)
+![DFF SR Latch circuit](images/DFF_NAND.png)
 
 Source: [https://www.electronics-tutorials.ws/sequential/seq_4.html](https://www.electronics-tutorials.ws/sequential/seq_4.html)
 
@@ -73,7 +73,7 @@ Output: Digital 3.3V signal that is set to either A or B, depending on Sel
 
 The Mux can also be implemented using three NAND gates, as shown in the circuit below. In the circuit, S is short for Sel, and S' means "not S", i.e. if S=0 then S'=1 and vice versa. To generate "not S", a 4th NAND gate is required to act as a "Not" gate, or a gate that simply inverts its own input. A Not gate can be made from a NAND gate by simply connecting the same input signal to both inputs of the NAND gate.
 
-![Mux NAND gate implementation](Mux_NAND.jpg)
+![Mux NAND gate implementation](images/Mux_NAND.jpg)
 
 Putting the DFF-SR and Mux circuits together, we get the fully-functional 1-bit register. Below is the full *schematic* for the circuit. A circuit schematic effectively captures the design of the circuit using boxes and symbols to represent devices, and wires to represent the connections between device pins:
 

@@ -19,8 +19,9 @@ U 1 1 5E796315
 P 15500 2900
 F 0 "J2" H 15150 5050 50  0000 L CNN
 F 1 "DB37_Female" H 15000 4950 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 15500 2900 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 15500 2900 50  0001 C CNN
 F 3 " ~" H 15500 2900 50  0001 C CNN
+F 4 "AE10941-ND" H 15500 2900 50  0001 C CNN "Digikey PN"
 	1    15500 2900
 	1    0    0    -1  
 $EndComp
@@ -129,8 +130,9 @@ U 1 1 5E7D54CB
 P 13950 2900
 F 0 "J1" H 13600 5050 50  0000 L CNN
 F 1 "DB37_Female" H 13450 4950 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 13950 2900 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 13950 2900 50  0001 C CNN
 F 3 " ~" H 13950 2900 50  0001 C CNN
+F 4 "AE10941-ND" H 13950 2900 50  0001 C CNN "Digikey PN"
 	1    13950 2900
 	1    0    0    -1  
 $EndComp
@@ -241,8 +243,9 @@ U 1 1 5E83C301
 P 12400 2900
 F 0 "J3" H 12300 5050 50  0000 L CNN
 F 1 "DB37_Female" H 12200 4950 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 12400 2900 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 12400 2900 50  0001 C CNN
 F 3 " ~" H 12400 2900 50  0001 C CNN
+F 4 "AE10941-ND" H 12400 2900 50  0001 C CNN "Digikey PN"
 	1    12400 2900
 	1    0    0    -1  
 $EndComp
@@ -351,8 +354,9 @@ U 1 1 5E910362
 P 10850 2900
 F 0 "J4" H 10750 5050 50  0000 L CNN
 F 1 "DB37_Female" H 10650 4950 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 10850 2900 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10850 2900 50  0001 C CNN
 F 3 " ~" H 10850 2900 50  0001 C CNN
+F 4 "AE10941-ND" H 10850 2900 50  0001 C CNN "Digikey PN"
 	1    10850 2900
 	1    0    0    -1  
 $EndComp
@@ -448,8 +452,9 @@ U 1 1 5E7CA902
 P 1450 2900
 F 0 "J5" H 1368 783 50  0000 C CNN
 F 1 "DB37_Female" H 1368 874 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 1450 2900 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 1450 2900 50  0001 C CNN
 F 3 " ~" H 1450 2900 50  0001 C CNN
+F 4 "AE10941-ND" H 1450 2900 50  0001 C CNN "Digikey PN"
 	1    1450 2900
 	-1   0    0    1   
 $EndComp
@@ -557,8 +562,9 @@ U 1 1 5E8724C3
 P 1450 6500
 F 0 "J6" H 1368 5008 50  0000 C CNN
 F 1 "DB25_Female" H 1368 5099 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 1450 6500 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 1450 6500 50  0001 C CNN
 F 3 " ~" H 1450 6500 50  0001 C CNN
+F 4 "AE10935-ND" H 1450 6500 50  0001 C CNN "Digikey PN"
 	1    1450 6500
 	-1   0    0    1   
 $EndComp
@@ -586,8 +592,9 @@ U 1 1 5E98CA93
 P 6200 10100
 F 0 "J9" H 6118 9408 50  0000 C CNN
 F 1 "DB9_Female" H 6118 9499 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 6200 10100 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 6200 10100 50  0001 C CNN
 F 3 " ~" H 6200 10100 50  0001 C CNN
+F 4 "AE10921-ND" H 6200 10100 50  0001 C CNN "Digikey PN"
 	1    6200 10100
 	-1   0    0    1   
 $EndComp
@@ -1034,6 +1041,7 @@ F 0 "R1" V 3795 10700 50  0000 C CNN
 F 1 "2K" V 3886 10700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4040 10690 50  0001 C CNN
 F 3 "~" H 4000 10700 50  0001 C CNN
+F 4 "P2.0KECT-ND" V 4000 10700 50  0001 C CNN "Digikey PN"
 	1    4000 10700
 	0    1    1    0   
 $EndComp
@@ -1045,8 +1053,9 @@ U 1 1 5E8A4226
 P 8100 7050
 F 0 "J10" H 7950 9200 50  0000 L CNN
 F 1 "DB37_Female" H 7850 9100 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8100 7050 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 8100 7050 50  0001 C CNN
 F 3 " ~" H 8100 7050 50  0001 C CNN
+F 4 "AE10941-ND" H 8100 7050 50  0001 C CNN "Digikey PN"
 	1    8100 7050
 	1    0    0    -1  
 $EndComp
@@ -1056,8 +1065,9 @@ U 1 1 5E8A8FC8
 P 8100 2750
 F 0 "J11" H 8280 2784 50  0000 L CNN
 F 1 "DB37_Female" H 8280 2693 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8100 2750 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 8100 2750 50  0001 C CNN
 F 3 " ~" H 8100 2750 50  0001 C CNN
+F 4 "AE10941-ND" H 8100 2750 50  0001 C CNN "Digikey PN"
 	1    8100 2750
 	1    0    0    -1  
 $EndComp
@@ -1225,6 +1235,7 @@ F 0 "SW1" H 4350 10035 50  0000 C CNN
 F 1 "SW_SPST" H 4350 9944 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 4350 9800 50  0001 C CNN
 F 3 "~" H 4350 9800 50  0001 C CNN
+F 4 "SW415-ND" H 4350 9800 50  0001 C CNN "Digikey PN"
 	1    4350 9800
 	1    0    0    -1  
 $EndComp
@@ -1238,6 +1249,7 @@ F 0 "R2" V 4645 9650 50  0000 C CNN
 F 1 "2K" V 4736 9650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4890 9640 50  0001 C CNN
 F 3 "~" H 4850 9650 50  0001 C CNN
+F 4 "P2.0KECT-ND" V 4850 9650 50  0001 C CNN "Digikey PN"
 	1    4850 9650
 	1    0    0    -1  
 $EndComp
@@ -1275,6 +1287,7 @@ F 0 "J12" H 8457 10075 50  0000 C CNN
 F 1 "Barrel_Jack" H 8457 9984 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 8450 9710 50  0001 C CNN
 F 3 "~" H 8450 9710 50  0001 C CNN
+F 4 "CP-063AH-ND" H 8400 9750 50  0001 C CNN "Digikey PN"
 	1    8400 9750
 	1    0    0    -1  
 $EndComp
@@ -1301,6 +1314,7 @@ F 0 "J13" H 8318 10275 50  0000 C CNN
 F 1 "TSR 1-2433" H 8318 10366 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8400 10600 50  0001 C CNN
 F 3 "~" H 8400 10600 50  0001 C CNN
+F 4 "1951-2430-ND" H 8400 10600 50  0001 C CNN "Digikey PN"
 	1    8400 10600
 	-1   0    0    1   
 $EndComp
@@ -1379,8 +1393,9 @@ U 1 1 5E8ADF3E
 P 4250 2900
 F 0 "J7" H 4168 783 50  0000 C CNN
 F 1 "DB37_Female" H 4168 874 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 4250 2900 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 4250 2900 50  0001 C CNN
 F 3 " ~" H 4250 2900 50  0001 C CNN
+F 4 "AE10941-ND" H 4250 2900 50  0001 C CNN "Digikey PN"
 	1    4250 2900
 	-1   0    0    1   
 $EndComp
@@ -1390,8 +1405,9 @@ U 1 1 5EC4E1DD
 P 4250 6450
 F 0 "J8" H 4168 4958 50  0000 C CNN
 F 1 "DB25_Female" H 4168 5049 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 4250 6450 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 4250 6450 50  0001 C CNN
 F 3 " ~" H 4250 6450 50  0001 C CNN
+F 4 "AE10935-ND" H 4250 6450 50  0001 C CNN "Digikey PN"
 	1    4250 6450
 	-1   0    0    1   
 $EndComp

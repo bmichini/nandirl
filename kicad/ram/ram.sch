@@ -79,8 +79,9 @@ U 1 1 5E7F94CF
 P 10900 2750
 F 0 "J4" H 10818 658 50  0000 C CNN
 F 1 "DB37_Male" H 10818 749 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 10900 2750 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10900 2750 50  0001 C CNN
 F 3 " ~" H 10900 2750 50  0001 C CNN
+F 4 "AE10986-ND" H 10900 2750 50  0001 C CNN "Digikey PN"
 	1    10900 2750
 	1    0    0    -1  
 $EndComp
@@ -223,8 +224,9 @@ U 1 1 5E90739A
 P 9900 2150
 F 0 "J3" H 9850 3700 50  0000 L CNN
 F 1 "DB25_Male" H 9800 3600 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 9900 2150 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 9900 2150 50  0001 C CNN
 F 3 " ~" H 9900 2150 50  0001 C CNN
+F 4 "AE10980-ND" H 9900 2150 50  0001 C CNN "Digikey PN"
 	1    9900 2150
 	1    0    0    -1  
 $EndComp
@@ -1247,6 +1249,7 @@ F 0 "C6" V 2721 1850 50  0000 C CNN
 F 1 "0.1uF" V 2812 1850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 2950 1850 50  0001 C CNN
 F 3 "~" H 2950 1850 50  0001 C CNN
+F 4 "399-C1206C104K5RAC7800CT-ND" V 2950 1850 50  0001 C CNN "Digikey PN"
 	1    2950 1850
 	0    1    1    0   
 $EndComp
@@ -1272,6 +1275,7 @@ F 0 "C5" H 1000 1800 50  0000 R CNN
 F 1 "0.1uF" H 1100 1900 50  0000 R CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 850 1850 50  0001 C CNN
 F 3 "~" H 850 1850 50  0001 C CNN
+F 4 "399-C1206C104K5RAC7800CT-ND" H 850 1850 50  0001 C CNN "Digikey PN"
 	1    850  1850
 	-1   0    0    1   
 $EndComp
