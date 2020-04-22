@@ -79,8 +79,9 @@ U 1 1 5E7F94CF
 P 8650 3700
 F 0 "J1" H 8568 1608 50  0000 C CNN
 F 1 "DB37_Male" H 8568 1699 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8650 3700 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 8650 3700 50  0001 C CNN
 F 3 " ~" H 8650 3700 50  0001 C CNN
+F 4 "AE10986-ND" H 8650 3700 50  0001 C CNN "Digikey PN"
 	1    8650 3700
 	-1   0    0    1   
 $EndComp
@@ -309,6 +310,7 @@ F 0 "R2" H 6668 4746 50  0000 L CNN
 F 1 "5K" H 6668 4655 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6640 4690 50  0001 C CNN
 F 3 "~" H 6600 4700 50  0001 C CNN
+F 4 "P5.1KECT-ND" H 6600 4700 50  0001 C CNN "Digikey PN"
 	1    6600 4700
 	1    0    0    -1  
 $EndComp
@@ -351,6 +353,7 @@ F 0 "R1" H 4118 3446 50  0000 L CNN
 F 1 "5K" H 4118 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4090 3390 50  0001 C CNN
 F 3 "~" H 4050 3400 50  0001 C CNN
+F 4 "P5.1KECT-ND" H 4050 3400 50  0001 C CNN "Digikey PN"
 	1    4050 3400
 	1    0    0    -1  
 $EndComp
@@ -378,6 +381,7 @@ F 0 "R4" H 6868 2746 50  0000 L CNN
 F 1 "5K" H 6868 2655 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6840 2690 50  0001 C CNN
 F 3 "~" H 6800 2700 50  0001 C CNN
+F 4 "P5.1KECT-ND" H 6800 2700 50  0001 C CNN "Digikey PN"
 	1    6800 2700
 	1    0    0    -1  
 $EndComp
@@ -405,6 +409,7 @@ F 0 "R3" H 3868 2746 50  0000 L CNN
 F 1 "5K" H 3868 2655 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 3840 2690 50  0001 C CNN
 F 3 "~" H 3800 2700 50  0001 C CNN
+F 4 "P5.1KECT-ND" H 3800 2700 50  0001 C CNN "Digikey PN"
 	1    3800 2700
 	1    0    0    -1  
 $EndComp
