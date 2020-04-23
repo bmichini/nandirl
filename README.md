@@ -11,7 +11,7 @@ The remainder of this chapter is a high-level overview of the computer architect
 If we zoom out all the way, our computer consists of these three main components:
 ![Basic Computer Architecture](images/ComputerArch1.png) 
 
-###ROM###
+### ROM
 ROM stands for "Read Only Memory". The ROM chip has a simple job in life -- given an *address*, the ROM provides an *instruction*. An address is simply a number, as is an instruction. Abstractly, imagine the ROM chip as a filing cabinet with many folders inside of it. The ROM chip gets an address, looks for the folder with the matching label, and hands back the contents of that folder (the instruction).
 
 >More concretely, computers store numbers in *binary*. What's binary? The decimal number 5 in binary is **101**, because:
@@ -29,12 +29,12 @@ Back to the ROM chip. The *address* passed into the ROM chip takes the form of 1
 
 So to recap, ROM gets a 16-bit address. It finds that address in its filing cabinet and outputs the contents, which happens to be another set of 16 bits. Get a new address, look in a new memory location, send out a new instruction. In real life the 16 bits are represented as either high or low voltage (electrical potential) transmitted via 16 tiny metal wires going into the chip and 16 going out. It's called *read-only* memory because the contents of the memory does not change throughout the course of the computer's execution (it can only be *read*, not *written*). The 16-bits of instruction will go on to tell the CPU what to do, hence the ROM chip contains the *program* that the computer will execute. As a final note, ROM chips retain their memory even when the computer is powered off, so that the ROM will reliably provide the same addressed instruction data each and every time the computer is turned on.
 
-###RAM###
+### RAM
 RAM stands for "Random Access Memory". It is very similar to ROM, in that it stores 16-bit numbers in filing cabinets that are indexed by 16-bit addresses. Get a 16-bit address, output the 16-bit number stored at that address. The thing that makes RAM different from ROM is that you can *write* a value to an address as well as *read* a value from an address. The chip uses to the same set of incoming address bits whether it's reading or writing. In order to know what value to write to memory, the RAM chip has 16-bits of data *input*. Hence there are two lines going into the RAM chip (*address* and *data input*) and one coming out (*data output*). 
 
 In the computer architecture, the input *to* the RAM chip comes from the output of the CPU (hence it's labeled "outM" or "out to Memory" in the diagram). The output *from* the RAM chip goes...back into the CPU! This may seem odd, but the CPU is effectively using the RAM as short-term memory. The RAM doesn't store a program like ROM does -- in fact, all of the data stored in RAM resets to some unpredictable state every time the computer turns off. The RAM does, however, provide 65536 readable and writeable memory locations for the CPU to store and fetch 16-bit numbers during program execution. This comes in handy when the CPU does calculations and needs to store the result for use later on.
 
-###CPU###
+### CPU
 
 In subsequent chapters I'll be building out each one of the major components in this architecture. A preview is below!
 
