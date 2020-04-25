@@ -15,7 +15,7 @@ If we zoom out all the way, our computer consists of these three main components
 ROM stands for "Read Only Memory". The ROM chip has a simple job in life -- given an *address*, the ROM provides an *instruction*. An address is simply a number, as is an instruction. Abstractly, imagine the ROM chip as a filing cabinet with many folders inside of it. The ROM chip gets an address, looks for the folder with the matching label, and hands back the contents of that folder (the instruction).
 
 >More concretely, computers store numbers in *binary*. What's binary? The decimal number 5 in binary is **101**, because:
- >**1**x2^2^ + **0**x2^1^ + **1**x2^0^ =  **1**x4 + **0**x2 + **1**x1 = 5. 
+ >**1**x2<sup>2</sup> + **0**x2<sup>1</sup> + **1**x2<sup>0</sup> =  **1**x4 + **0**x2 + **1**x1 = 5. 
 >
 >Since we've used three powers of 2, this is a *3-bit *binary number. The more powers of two we use the more numbers we can represent with our computer. The Hack computer, and thus the nandirl computer, is a *16-bit architecture*. Thus the smallest (unsigned) number we can represent is **0000 0000 0000 0000**:
 >

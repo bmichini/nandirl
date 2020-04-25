@@ -429,4 +429,6 @@ Wire Wire Line
 Connection ~ 3800 2550
 Wire Wire Line
 	3800 2550 4750 2550
+Text Notes 3950 2200 0    50   ~ 0
+TODO: Set 15 and 16 with jumpers via pullups/pulldowns
 $EndSCHEMATC
