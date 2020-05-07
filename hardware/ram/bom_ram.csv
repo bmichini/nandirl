@@ -1,0 +1,11 @@
+Reference, Quantity, Value, Footprint, Datasheet, Digikey PN
+C2 C1 ,2,"100uF","Capacitor_THT:CP_Radial_D8.0mm_P2.50mm","~","P15797CT-ND"
+C3 C4 ,2,"100nF","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm","~","BC5229CT-ND"
+C6 C5 ,2,"0.1uF","Capacitor_SMD:C_1206_3216Metric","~","399-C1206C104K5RAC7800CT-ND"
+J1 ,1,"I/O Expansion 1","Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical","~"
+J2 ,1,"I/O Expansion 2","Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical","~"
+J3 ,1,"DB25_Male","Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"," ~","AE10980-ND"
+J4 ,1,"DB37_Male","Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"," ~","AE10986-ND"
+U1 ,1,"71V016SA12PHGI","Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm","","800-2609-5-ND"
+U3 U2 U4 U9 U13 U17 U21 U7 U11 U15 U19 U10 U14 U18 U22 U8 U12 U16 U20 U25 U29 U33 U37 U23 U27 U31 U35 U26 U30 U34 U38 U24 U28 U32 U36 U41 U45 U49 U53 U39 U43 U47 U51 U42 U46 U50 U54 U40 U44 U48 U52 ,51,"SN74HCS00PWR","Package_SO:TSSOP-14_4.4x5mm_P0.65mm","","296-SN74HCS00PWRCT-ND"
+U5 U6 ,2,"SN74LVC541APWR","Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm","","296-8521-1-ND"
