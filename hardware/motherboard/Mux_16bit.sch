@@ -988,15 +988,51 @@ F 3 "" H 3200 6300 50  0001 C CNN
 	1    3200 6300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7500 5850
-NoConn ~ 7500 5950
 NoConn ~ 8000 5900
-NoConn ~ 8500 5400
-NoConn ~ 8500 5500
-NoConn ~ 8500 5850
-NoConn ~ 8500 5950
 NoConn ~ 9000 5450
 NoConn ~ 9000 5900
 Text HLabel 1650 1400 2    50   Output ~ 0
 not_sel
+Wire Wire Line
+	8500 5400 8500 5500
+Connection ~ 8500 5500
+Wire Wire Line
+	8500 5500 8500 5850
+Connection ~ 8500 5850
+Wire Wire Line
+	8500 5850 8500 5950
+Connection ~ 8500 5950
+Wire Wire Line
+	8500 5950 8500 6050
+Wire Wire Line
+	7500 5850 7500 5950
+Connection ~ 7500 5950
+Wire Wire Line
+	7500 5950 7500 6050
+$Comp
+L power:GND #PWR051
+U 1 1 5EE7F347
+P 7500 6050
+AR Path="/5E81995D/5EE7F347" Ref="#PWR051"  Part="1" 
+AR Path="/5EAF9122/5EE7F347" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 7500 5800 50  0001 C CNN
+F 1 "GND" H 7505 5877 50  0000 C CNN
+F 2 "" H 7500 6050 50  0001 C CNN
+F 3 "" H 7500 6050 50  0001 C CNN
+	1    7500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR064
+U 1 1 5EE7F760
+P 8500 6050
+AR Path="/5E81995D/5EE7F760" Ref="#PWR064"  Part="1" 
+AR Path="/5EAF9122/5EE7F760" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 8500 5800 50  0001 C CNN
+F 1 "GND" H 8505 5877 50  0000 C CNN
+F 2 "" H 8500 6050 50  0001 C CNN
+F 3 "" H 8500 6050 50  0001 C CNN
+	1    8500 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
