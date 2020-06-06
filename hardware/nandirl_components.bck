@@ -16,6 +16,10 @@ $CMP SN74CBTLV3257PWR
 D Low-Voltage 4-Bit 1-of-2 FET Multiplexer/Demultiplexer
 $ENDCMP
 #
+$CMP SN74HCS00PWR
+D Schmitt-trigger Input NAND gate 4-channel 2-input
+$ENDCMP
+#
 $CMP SN74LVC541APWR
 D Octal Buffer Non-Inverting
 $ENDCMP

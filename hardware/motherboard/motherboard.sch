@@ -136,39 +136,39 @@ F 4 "AE10941-ND" H 13950 2900 50  0001 C CNN "Digikey PN"
 	1    13950 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 13650 3000 0    50   Output ~ 0
+Text GLabel 13650 1100 0    50   Output ~ 0
 areg_out0
-Text GLabel 13650 3100 0    50   Output ~ 0
+Text GLabel 13650 1200 0    50   Output ~ 0
 areg_out1
-Text GLabel 13650 3200 0    50   Output ~ 0
+Text GLabel 13650 1300 0    50   Output ~ 0
 areg_out2
-Text GLabel 13650 3300 0    50   Output ~ 0
+Text GLabel 13650 1400 0    50   Output ~ 0
 areg_out3
-Text GLabel 13650 3400 0    50   Output ~ 0
+Text GLabel 13650 1500 0    50   Output ~ 0
 areg_out4
-Text GLabel 13650 3500 0    50   Output ~ 0
+Text GLabel 13650 1600 0    50   Output ~ 0
 areg_out5
-Text GLabel 13650 3600 0    50   Output ~ 0
+Text GLabel 13650 1700 0    50   Output ~ 0
 areg_out6
-Text GLabel 13650 3700 0    50   Output ~ 0
+Text GLabel 13650 1800 0    50   Output ~ 0
 areg_out7
-Text GLabel 13650 3800 0    50   Output ~ 0
+Text GLabel 13650 1900 0    50   Output ~ 0
 areg_out8
-Text GLabel 13650 3900 0    50   Output ~ 0
+Text GLabel 13650 2000 0    50   Output ~ 0
 areg_out9
-Text GLabel 13650 4000 0    50   Output ~ 0
+Text GLabel 13650 2100 0    50   Output ~ 0
 areg_out10
-Text GLabel 13650 4100 0    50   Output ~ 0
+Text GLabel 13650 2200 0    50   Output ~ 0
 areg_out11
-Text GLabel 13650 4200 0    50   Output ~ 0
+Text GLabel 13650 2300 0    50   Output ~ 0
 areg_out12
-Text GLabel 13650 4300 0    50   Output ~ 0
+Text GLabel 13650 2400 0    50   Output ~ 0
 areg_out13
-Text GLabel 13650 4400 0    50   Output ~ 0
+Text GLabel 13650 2500 0    50   Output ~ 0
 areg_out14
-Text GLabel 13650 4500 0    50   Output ~ 0
+Text GLabel 13650 2600 0    50   Output ~ 0
 areg_out15
-Text GLabel 13650 4500 0    50   Output ~ 0
+Text GLabel 13650 2600 0    50   Output ~ 0
 areg_out15
 $Comp
 L power:GND #PWR02
@@ -199,37 +199,37 @@ Wire Wire Line
 Wire Wire Line
 	13650 2800 13650 2700
 Connection ~ 13650 2700
-Text GLabel 13650 2600 0    50   Input ~ 0
+Text GLabel 13650 4500 0    50   Input ~ 0
 areg_in0
-Text GLabel 13650 2500 0    50   Input ~ 0
+Text GLabel 13650 4400 0    50   Input ~ 0
 areg_in1
-Text GLabel 13650 2400 0    50   Input ~ 0
+Text GLabel 13650 4300 0    50   Input ~ 0
 areg_in2
-Text GLabel 13650 2300 0    50   Input ~ 0
+Text GLabel 13650 4200 0    50   Input ~ 0
 areg_in3
-Text GLabel 13650 2200 0    50   Input ~ 0
+Text GLabel 13650 4100 0    50   Input ~ 0
 areg_in4
-Text GLabel 13650 2100 0    50   Input ~ 0
+Text GLabel 13650 4000 0    50   Input ~ 0
 areg_in5
-Text GLabel 13650 2000 0    50   Input ~ 0
+Text GLabel 13650 3900 0    50   Input ~ 0
 areg_in6
-Text GLabel 13650 1900 0    50   Input ~ 0
+Text GLabel 13650 3800 0    50   Input ~ 0
 areg_in7
-Text GLabel 13650 1800 0    50   Input ~ 0
+Text GLabel 13650 3700 0    50   Input ~ 0
 areg_in8
-Text GLabel 13650 1700 0    50   Input ~ 0
+Text GLabel 13650 3600 0    50   Input ~ 0
 areg_in9
-Text GLabel 13650 1600 0    50   Input ~ 0
+Text GLabel 13650 3500 0    50   Input ~ 0
 areg_in10
-Text GLabel 13650 1500 0    50   Input ~ 0
+Text GLabel 13650 3400 0    50   Input ~ 0
 areg_in11
-Text GLabel 13650 1400 0    50   Input ~ 0
+Text GLabel 13650 3300 0    50   Input ~ 0
 areg_in12
-Text GLabel 13650 1300 0    50   Input ~ 0
+Text GLabel 13650 3200 0    50   Input ~ 0
 areg_in13
-Text GLabel 13650 1200 0    50   Input ~ 0
+Text GLabel 13650 3100 0    50   Input ~ 0
 areg_in14
-Text GLabel 13650 1100 0    50   Input ~ 0
+Text GLabel 13650 3000 0    50   Input ~ 0
 areg_in15
 Text GLabel 13650 4600 0    50   Input ~ 0
 clk_a
@@ -1293,7 +1293,7 @@ F 4 "CP-063AH-ND" H 8400 9750 50  0001 C CNN "Digikey PN"
 	1    8400 9750
 	1    0    0    -1  
 $EndComp
-Text GLabel 9350 9550 2    50   Output ~ 0
+Text GLabel 9900 9550 2    50   Output ~ 0
 Vin
 Wire Wire Line
 	8700 9850 9000 9850
@@ -2221,4 +2221,18 @@ F 4 "P1.0KECT-ND" V 9700 7700 50  0001 C CNN "Digikey PN"
 $EndComp
 Text Notes 9650 5650 2    50   ~ 0
 Instruction LEDs
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5EDCC3F6
+P 9550 9550
+F 0 "SW2" H 9550 9785 50  0000 C CNN
+F 1 "SW_SPST" H 9550 9694 50  0000 C CNN
+F 2 "nandirl logo:SPST Toggle Switch" H 9550 9550 50  0001 C CNN
+F 3 "~" H 9550 9550 50  0001 C CNN
+F 4 "EG4914-ND" H 9550 9550 50  0001 C CNN "Digikey PN"
+	1    9550 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 9550 9900 9550
 $EndSCHEMATC
