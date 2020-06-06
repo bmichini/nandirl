@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 71V016SA12PHGI
+D SRAM 1Mb (64K x 16)
+$ENDCMP
+#
+$CMP PI6C49CB04AQ
+D 1 To 4 Automotive Clock Buffer
+$ENDCMP
+#
+$CMP SN74ALVC00
+D NAND gate 4-channel 2-input
+$ENDCMP
+#
+$CMP SN74CBTLV3257PWR
+D Low-Voltage 4-Bit 1-of-2 FET Multiplexer/Demultiplexer
+$ENDCMP
+#
+$CMP SN74HCS00PWR
+D Schmitt-trigger Input NAND gate 4-channel 2-input
+$ENDCMP
+#
+$CMP SN74LVC541APWR
+D Octal Buffer Non-Inverting
+$ENDCMP
+#
+$CMP SST39VF200A
+D Flash 2Mb (128K x 16)
+$ENDCMP
+#
+#End Doc Library

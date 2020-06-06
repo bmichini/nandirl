@@ -1,0 +1,1002 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8950 3100 9200 3100
+Wire Wire Line
+	8150 3150 8450 3150
+Wire Wire Line
+	8150 3100 8150 3150
+Wire Wire Line
+	7950 3100 8150 3100
+Wire Wire Line
+	8450 2850 8450 3050
+Wire Wire Line
+	8950 2850 8450 2850
+Wire Wire Line
+	8950 2650 8950 2850
+Text Label 7200 3150 0    50   ~ 0
+not_sel
+Wire Wire Line
+	7450 3150 7200 3150
+Wire Wire Line
+	6950 2700 7450 2700
+Wire Wire Line
+	6950 3100 6950 2700
+Wire Wire Line
+	6450 3100 6950 3100
+Wire Wire Line
+	7050 2600 7450 2600
+Wire Wire Line
+	7050 2650 7050 2600
+Wire Wire Line
+	6450 2650 7050 2650
+Text Label 5700 2700 0    50   ~ 0
+not_sel
+Wire Wire Line
+	5950 2700 5700 2700
+Wire Wire Line
+	4650 3150 4950 3150
+Wire Wire Line
+	4650 3100 4650 3150
+Wire Wire Line
+	3900 3100 4650 3100
+Wire Wire Line
+	4950 2850 4950 3050
+Wire Wire Line
+	5450 2850 4950 2850
+Wire Wire Line
+	5450 2650 5450 2850
+Wire Wire Line
+	4750 2700 4950 2700
+Wire Wire Line
+	4750 2600 4950 2600
+Text Label 3150 3150 0    50   ~ 0
+not_sel
+Wire Wire Line
+	3400 3150 3150 3150
+Wire Wire Line
+	3900 2650 4200 2650
+Wire Wire Line
+	2950 2700 2950 3100
+Wire Wire Line
+	2900 3100 2950 3100
+Wire Wire Line
+	2950 2700 3400 2700
+Wire Wire Line
+	3150 2600 3400 2600
+Wire Wire Line
+	3150 2650 3150 2600
+Wire Wire Line
+	2900 2650 3150 2650
+Wire Wire Line
+	2150 3150 2400 3150
+Wire Wire Line
+	2150 3050 2400 3050
+Text Label 2050 2700 0    50   ~ 0
+not_sel
+Wire Wire Line
+	2050 2700 2400 2700
+Wire Wire Line
+	2150 2600 2400 2600
+Text HLabel 8450 2600 0    50   Input ~ 0
+sel
+Text HLabel 5950 3150 0    50   Input ~ 0
+sel
+Text HLabel 4750 2700 0    50   Input ~ 0
+sel
+Text HLabel 2150 3150 0    50   Input ~ 0
+sel
+Text HLabel 9200 3100 2    50   Output ~ 0
+out8
+Text HLabel 7950 2650 2    50   Output ~ 0
+out7
+Text HLabel 5450 3100 2    50   Output ~ 0
+out6
+Text HLabel 4200 2650 2    50   Output ~ 0
+out5
+Text HLabel 8450 2700 0    50   Input ~ 0
+b_in8
+Text HLabel 5950 3050 0    50   Input ~ 0
+b_in7
+Text HLabel 4750 2600 0    50   Input ~ 0
+b_in6
+Text HLabel 2150 3050 0    50   Input ~ 0
+b_in5
+Text HLabel 7450 3050 0    50   Input ~ 0
+a_in8
+Text HLabel 5950 2600 0    50   Input ~ 0
+a_in7
+Text HLabel 3400 3050 0    50   Input ~ 0
+a_in6
+Text HLabel 2150 2600 0    50   Input ~ 0
+a_in5
+$Comp
+L NANDIRL_components:SN74ALVC00 U7
+U 1 1 5E860E76
+P 8450 1950
+AR Path="/5E81995D/5E860E76" Ref="U7"  Part="1" 
+AR Path="/5EAF9122/5E860E76" Ref="U20"  Part="1" 
+F 0 "U20" H 9100 1600 50  0000 C CNN
+F 1 "SN74ALVC00" H 7550 1600 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8200 450 50  0001 C CNN
+F 3 "" H 8450 1950 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    8450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U6
+U 1 1 5E85FB96
+P 5950 1950
+AR Path="/5E81995D/5E85FB96" Ref="U6"  Part="1" 
+AR Path="/5EAF9122/5E85FB96" Ref="U19"  Part="1" 
+F 0 "U19" H 6600 1600 50  0000 C CNN
+F 1 "SN74ALVC00" H 5050 1600 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5700 450 50  0001 C CNN
+F 3 "" H 5950 1950 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    5950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U5
+U 1 1 5E85D974
+P 3400 1950
+AR Path="/5E81995D/5E85D974" Ref="U5"  Part="1" 
+AR Path="/5EAF9122/5E85D974" Ref="U18"  Part="1" 
+F 0 "U18" H 4050 1600 50  0000 C CNN
+F 1 "SN74ALVC00" H 2500 1600 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3150 450 50  0001 C CNN
+F 3 "" H 3400 1950 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    3400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1700 9850 1700
+Wire Wire Line
+	9800 1650 9800 1700
+Wire Wire Line
+	9350 1650 9800 1650
+Wire Wire Line
+	9850 1400 9850 1600
+Wire Wire Line
+	10350 1400 9850 1400
+Wire Wire Line
+	10350 1200 10350 1400
+Text Label 8400 1700 0    50   ~ 0
+not_sel
+Wire Wire Line
+	8400 1700 8850 1700
+Wire Wire Line
+	8650 1600 8850 1600
+Text HLabel 8650 1600 0    50   Input ~ 0
+a_in4
+Text HLabel 9850 1150 0    50   Input ~ 0
+sel
+Text HLabel 10350 1650 2    50   Output ~ 0
+out4
+Text HLabel 9850 1250 0    50   Input ~ 0
+b_in4
+Text HLabel 9350 1200 2    50   Output ~ 0
+out3
+Text HLabel 5500 1200 2    50   Output ~ 0
+out1
+Wire Wire Line
+	5200 1200 5500 1200
+Wire Wire Line
+	8250 1250 8850 1250
+Wire Wire Line
+	8250 1650 8250 1250
+Wire Wire Line
+	7700 1650 8250 1650
+Wire Wire Line
+	8400 1150 8850 1150
+Wire Wire Line
+	8400 1200 8400 1150
+Wire Wire Line
+	7700 1200 8400 1200
+Text Label 7000 1250 0    50   ~ 0
+not_sel
+Wire Wire Line
+	7200 1250 7000 1250
+Text HLabel 7200 1150 0    50   Input ~ 0
+a_in3
+Text HLabel 7200 1600 0    50   Input ~ 0
+b_in3
+Text HLabel 7200 1700 0    50   Input ~ 0
+sel
+Text HLabel 6700 1650 2    50   Output ~ 0
+out2
+Wire Wire Line
+	6200 1450 6200 1600
+Wire Wire Line
+	6700 1450 6200 1450
+Wire Wire Line
+	6700 1200 6700 1450
+Wire Wire Line
+	5900 1700 6200 1700
+Wire Wire Line
+	5900 1650 5900 1700
+Wire Wire Line
+	5200 1650 5900 1650
+Wire Wire Line
+	6000 1250 6200 1250
+Wire Wire Line
+	6000 1150 6200 1150
+Text Label 4450 1700 0    50   ~ 0
+not_sel
+Wire Wire Line
+	4700 1700 4450 1700
+Text HLabel 6000 1150 0    50   Input ~ 0
+b_in2
+Text HLabel 6000 1250 0    50   Input ~ 0
+sel
+Text HLabel 4700 1600 0    50   Input ~ 0
+a_in2
+$Comp
+L NANDIRL_components:SN74ALVC00 U4
+U 1 1 5E835103
+P 9850 500
+AR Path="/5E81995D/5E835103" Ref="U4"  Part="1" 
+AR Path="/5EAF9122/5E835103" Ref="U17"  Part="1" 
+F 0 "U17" H 10500 150 50  0000 C CNN
+F 1 "SN74ALVC00" H 8950 150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9600 -1000 50  0001 C CNN
+F 3 "" H 9850 500 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    9850 500 
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U3
+U 1 1 5E82D6FB
+P 7200 500
+AR Path="/5E81995D/5E82D6FB" Ref="U3"  Part="1" 
+AR Path="/5EAF9122/5E82D6FB" Ref="U16"  Part="1" 
+F 0 "U16" H 7850 150 50  0000 C CNN
+F 1 "SN74ALVC00" H 6300 150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6950 -1000 50  0001 C CNN
+F 3 "" H 7200 500 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    7200 500 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1250 4700 1250
+Wire Wire Line
+	4200 1650 4200 1250
+Wire Wire Line
+	4700 1200 4700 1150
+Wire Wire Line
+	4200 1200 4700 1200
+Wire Wire Line
+	3500 1700 3700 1700
+Wire Wire Line
+	3500 1600 3700 1600
+Text HLabel 3500 1700 0    50   Input ~ 0
+b_in1
+Text HLabel 3500 1600 0    50   Input ~ 0
+sel
+Text Label 3500 1250 0    50   ~ 0
+not_sel
+Wire Wire Line
+	3700 1250 3500 1250
+Wire Wire Line
+	3500 1150 3700 1150
+Text HLabel 3500 1150 0    50   Input ~ 0
+a_in1
+$Comp
+L NANDIRL_components:SN74ALVC00 U2
+U 1 1 5E827C09
+P 4700 500
+AR Path="/5E81995D/5E827C09" Ref="U2"  Part="1" 
+AR Path="/5EAF9122/5E827C09" Ref="U15"  Part="1" 
+F 0 "U15" H 5350 150 50  0000 C CNN
+F 1 "SN74ALVC00" H 3750 150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4450 -1000 50  0001 C CNN
+F 3 "" H 4700 500 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    4700 500 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1700 2150 1700
+Wire Wire Line
+	1850 1650 1850 1700
+Wire Wire Line
+	1650 1650 1850 1650
+Wire Wire Line
+	2000 1600 2150 1600
+Wire Wire Line
+	2000 1400 2000 1600
+Wire Wire Line
+	2650 1400 2000 1400
+Wire Wire Line
+	2650 1200 2650 1400
+Wire Wire Line
+	2650 1650 2950 1650
+Text HLabel 2150 1150 0    50   Input ~ 0
+sel
+Wire Wire Line
+	900  1700 1150 1700
+Wire Wire Line
+	1050 1600 1150 1600
+Wire Wire Line
+	1050 1400 1050 1600
+Wire Wire Line
+	1650 1400 1050 1400
+Wire Wire Line
+	1650 1200 1650 1400
+Text Label 1650 1200 0    50   ~ 0
+not_sel
+Wire Wire Line
+	1150 1200 1150 1250
+Connection ~ 1150 1200
+Wire Wire Line
+	1150 1150 1150 1200
+Wire Wire Line
+	850  1200 1150 1200
+$Comp
+L NANDIRL_components:SN74ALVC00 U1
+U 1 1 5E81C818
+P 2150 500
+AR Path="/5E81995D/5E81C818" Ref="U1"  Part="1" 
+AR Path="/5EAF9122/5E81C818" Ref="U14"  Part="1" 
+F 0 "U14" H 2800 150 50  0000 C CNN
+F 1 "SN74ALVC00" H 1250 150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1900 -1000 50  0001 C CNN
+F 3 "" H 2150 500 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    2150 500 
+	1    0    0    -1  
+$EndComp
+Text HLabel 850  1200 0    50   Input ~ 0
+sel
+Text HLabel 2950 1650 2    50   Output ~ 0
+out0
+Text HLabel 2150 1250 0    50   Input ~ 0
+b_in0
+Text HLabel 900  1700 0    50   Input ~ 0
+a_in0
+$Comp
+L power:GND #PWR015
+U 1 1 5E93573E
+P 1900 2050
+AR Path="/5E81995D/5E93573E" Ref="#PWR015"  Part="1" 
+AR Path="/5EAF9122/5E93573E" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 1900 1800 50  0001 C CNN
+F 1 "GND" H 1905 1877 50  0000 C CNN
+F 2 "" H 1900 2050 50  0001 C CNN
+F 3 "" H 1900 2050 50  0001 C CNN
+	1    1900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5E935C97
+P 4450 2050
+AR Path="/5E81995D/5E935C97" Ref="#PWR016"  Part="1" 
+AR Path="/5EAF9122/5E935C97" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 4450 1800 50  0001 C CNN
+F 1 "GND" H 4455 1877 50  0000 C CNN
+F 2 "" H 4450 2050 50  0001 C CNN
+F 3 "" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5E9361F3
+P 6950 2050
+AR Path="/5E81995D/5E9361F3" Ref="#PWR017"  Part="1" 
+AR Path="/5EAF9122/5E9361F3" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 6950 1800 50  0001 C CNN
+F 1 "GND" H 6955 1877 50  0000 C CNN
+F 2 "" H 6950 2050 50  0001 C CNN
+F 3 "" H 6950 2050 50  0001 C CNN
+	1    6950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5E937003
+P 9600 2050
+AR Path="/5E81995D/5E937003" Ref="#PWR018"  Part="1" 
+AR Path="/5EAF9122/5E937003" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 9600 1800 50  0001 C CNN
+F 1 "GND" H 9605 1877 50  0000 C CNN
+F 2 "" H 9600 2050 50  0001 C CNN
+F 3 "" H 9600 2050 50  0001 C CNN
+	1    9600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR011
+U 1 1 5E937FED
+P 1900 800
+AR Path="/5E81995D/5E937FED" Ref="#PWR011"  Part="1" 
+AR Path="/5EAF9122/5E937FED" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 1900 650 50  0001 C CNN
+F 1 "+3V3" H 1915 973 50  0000 C CNN
+F 2 "" H 1900 800 50  0001 C CNN
+F 3 "" H 1900 800 50  0001 C CNN
+	1    1900 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR012
+U 1 1 5E9383CC
+P 4450 800
+AR Path="/5E81995D/5E9383CC" Ref="#PWR012"  Part="1" 
+AR Path="/5EAF9122/5E9383CC" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 4450 650 50  0001 C CNN
+F 1 "+3V3" H 4465 973 50  0000 C CNN
+F 2 "" H 4450 800 50  0001 C CNN
+F 3 "" H 4450 800 50  0001 C CNN
+	1    4450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR013
+U 1 1 5E93941B
+P 6950 800
+AR Path="/5E81995D/5E93941B" Ref="#PWR013"  Part="1" 
+AR Path="/5EAF9122/5E93941B" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 6950 650 50  0001 C CNN
+F 1 "+3V3" H 6965 973 50  0000 C CNN
+F 2 "" H 6950 800 50  0001 C CNN
+F 3 "" H 6950 800 50  0001 C CNN
+	1    6950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR014
+U 1 1 5E9399F6
+P 9600 800
+AR Path="/5E81995D/5E9399F6" Ref="#PWR014"  Part="1" 
+AR Path="/5EAF9122/5E9399F6" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 9600 650 50  0001 C CNN
+F 1 "+3V3" H 9615 973 50  0000 C CNN
+F 2 "" H 9600 800 50  0001 C CNN
+F 3 "" H 9600 800 50  0001 C CNN
+	1    9600 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5E93AE9A
+P 3150 2250
+AR Path="/5E81995D/5E93AE9A" Ref="#PWR019"  Part="1" 
+AR Path="/5EAF9122/5E93AE9A" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3150 2100 50  0001 C CNN
+F 1 "+3V3" H 3165 2423 50  0000 C CNN
+F 2 "" H 3150 2250 50  0001 C CNN
+F 3 "" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR020
+U 1 1 5E93B370
+P 5700 2250
+AR Path="/5E81995D/5E93B370" Ref="#PWR020"  Part="1" 
+AR Path="/5EAF9122/5E93B370" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 5700 2100 50  0001 C CNN
+F 1 "+3V3" H 5715 2423 50  0000 C CNN
+F 2 "" H 5700 2250 50  0001 C CNN
+F 3 "" H 5700 2250 50  0001 C CNN
+	1    5700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR021
+U 1 1 5E93C407
+P 8200 2250
+AR Path="/5E81995D/5E93C407" Ref="#PWR021"  Part="1" 
+AR Path="/5EAF9122/5E93C407" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 8200 2100 50  0001 C CNN
+F 1 "+3V3" H 8215 2423 50  0000 C CNN
+F 2 "" H 8200 2250 50  0001 C CNN
+F 3 "" H 8200 2250 50  0001 C CNN
+	1    8200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5E93D16A
+P 8200 3500
+AR Path="/5E81995D/5E93D16A" Ref="#PWR024"  Part="1" 
+AR Path="/5EAF9122/5E93D16A" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 8200 3250 50  0001 C CNN
+F 1 "GND" H 8205 3327 50  0000 C CNN
+F 2 "" H 8200 3500 50  0001 C CNN
+F 3 "" H 8200 3500 50  0001 C CNN
+	1    8200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5E93E382
+P 5700 3500
+AR Path="/5E81995D/5E93E382" Ref="#PWR023"  Part="1" 
+AR Path="/5EAF9122/5E93E382" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 5700 3250 50  0001 C CNN
+F 1 "GND" H 5705 3327 50  0000 C CNN
+F 2 "" H 5700 3500 50  0001 C CNN
+F 3 "" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5E93E921
+P 3150 3500
+AR Path="/5E81995D/5E93E921" Ref="#PWR022"  Part="1" 
+AR Path="/5EAF9122/5E93E921" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 3150 3250 50  0001 C CNN
+F 1 "GND" H 3155 3327 50  0000 C CNN
+F 2 "" H 3150 3500 50  0001 C CNN
+F 3 "" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4500 7950 4500
+Wire Wire Line
+	6900 4550 7200 4550
+Wire Wire Line
+	6900 4500 6900 4550
+Wire Wire Line
+	6700 4500 6900 4500
+Wire Wire Line
+	7200 4250 7200 4450
+Wire Wire Line
+	7700 4250 7200 4250
+Wire Wire Line
+	7700 4050 7700 4250
+Text Label 5950 4550 0    50   ~ 0
+not_sel
+Wire Wire Line
+	6200 4550 5950 4550
+Wire Wire Line
+	5700 4100 6200 4100
+Wire Wire Line
+	5700 4500 5700 4100
+Wire Wire Line
+	5200 4500 5700 4500
+Wire Wire Line
+	5800 4000 6200 4000
+Wire Wire Line
+	5800 4050 5800 4000
+Wire Wire Line
+	5200 4050 5800 4050
+Text Label 4450 4100 0    50   ~ 0
+not_sel
+Wire Wire Line
+	4700 4100 4450 4100
+Wire Wire Line
+	3400 4550 3700 4550
+Wire Wire Line
+	3400 4500 3400 4550
+Wire Wire Line
+	2650 4500 3400 4500
+Wire Wire Line
+	3700 4250 3700 4450
+Wire Wire Line
+	4200 4250 3700 4250
+Wire Wire Line
+	4200 4050 4200 4250
+Wire Wire Line
+	3500 4100 3700 4100
+Wire Wire Line
+	3500 4000 3700 4000
+Text Label 1900 4550 0    50   ~ 0
+not_sel
+Wire Wire Line
+	2150 4550 1900 4550
+Wire Wire Line
+	2650 4050 2950 4050
+Wire Wire Line
+	1700 4100 1700 4500
+Wire Wire Line
+	1650 4500 1700 4500
+Wire Wire Line
+	1700 4100 2150 4100
+Wire Wire Line
+	1900 4000 2150 4000
+Wire Wire Line
+	1900 4050 1900 4000
+Wire Wire Line
+	1650 4050 1900 4050
+Wire Wire Line
+	900  4550 1150 4550
+Wire Wire Line
+	900  4450 1150 4450
+Text Label 800  4100 0    50   ~ 0
+not_sel
+Wire Wire Line
+	800  4100 1150 4100
+Wire Wire Line
+	900  4000 1150 4000
+Text HLabel 7200 4000 0    50   Input ~ 0
+sel
+Text HLabel 4700 4550 0    50   Input ~ 0
+sel
+Text HLabel 3500 4100 0    50   Input ~ 0
+sel
+Text HLabel 900  4550 0    50   Input ~ 0
+sel
+Text HLabel 7950 4500 2    50   Output ~ 0
+out12
+Text HLabel 6700 4050 2    50   Output ~ 0
+out11
+Text HLabel 4200 4500 2    50   Output ~ 0
+out10
+Text HLabel 2950 4050 2    50   Output ~ 0
+out9
+Text HLabel 7200 4100 0    50   Input ~ 0
+b_in12
+Text HLabel 4700 4450 0    50   Input ~ 0
+b_in11
+Text HLabel 3500 4000 0    50   Input ~ 0
+b_in10
+Text HLabel 900  4450 0    50   Input ~ 0
+b_in9
+Text HLabel 6200 4450 0    50   Input ~ 0
+a_in12
+Text HLabel 4700 4000 0    50   Input ~ 0
+a_in11
+Text HLabel 2150 4450 0    50   Input ~ 0
+a_in10
+Text HLabel 900  4000 0    50   Input ~ 0
+a_in9
+$Comp
+L NANDIRL_components:SN74ALVC00 U10
+U 1 1 5E98838F
+P 7200 3350
+AR Path="/5E81995D/5E98838F" Ref="U10"  Part="1" 
+AR Path="/5EAF9122/5E98838F" Ref="U23"  Part="1" 
+F 0 "U23" H 7850 3000 50  0000 C CNN
+F 1 "SN74ALVC00" H 6300 3000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6950 1850 50  0001 C CNN
+F 3 "" H 7200 3350 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    7200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U9
+U 1 1 5E988395
+P 4700 3350
+AR Path="/5E81995D/5E988395" Ref="U9"  Part="1" 
+AR Path="/5EAF9122/5E988395" Ref="U22"  Part="1" 
+F 0 "U22" H 5350 3000 50  0000 C CNN
+F 1 "SN74ALVC00" H 3800 3000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4450 1850 50  0001 C CNN
+F 3 "" H 4700 3350 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U8
+U 1 1 5E98839B
+P 2150 3350
+AR Path="/5E81995D/5E98839B" Ref="U8"  Part="1" 
+AR Path="/5EAF9122/5E98839B" Ref="U21"  Part="1" 
+F 0 "U21" H 2800 3000 50  0000 C CNN
+F 1 "SN74ALVC00" H 1250 3000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1900 1850 50  0001 C CNN
+F 3 "" H 2150 3350 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    2150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR025
+U 1 1 5E9883A1
+P 1900 3650
+AR Path="/5E81995D/5E9883A1" Ref="#PWR025"  Part="1" 
+AR Path="/5EAF9122/5E9883A1" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 1900 3500 50  0001 C CNN
+F 1 "+3V3" H 1915 3823 50  0000 C CNN
+F 2 "" H 1900 3650 50  0001 C CNN
+F 3 "" H 1900 3650 50  0001 C CNN
+	1    1900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR026
+U 1 1 5E9883A7
+P 4450 3650
+AR Path="/5E81995D/5E9883A7" Ref="#PWR026"  Part="1" 
+AR Path="/5EAF9122/5E9883A7" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 4450 3500 50  0001 C CNN
+F 1 "+3V3" H 4465 3823 50  0000 C CNN
+F 2 "" H 4450 3650 50  0001 C CNN
+F 3 "" H 4450 3650 50  0001 C CNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR027
+U 1 1 5E9883AD
+P 6950 3650
+AR Path="/5E81995D/5E9883AD" Ref="#PWR027"  Part="1" 
+AR Path="/5EAF9122/5E9883AD" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 6950 3500 50  0001 C CNN
+F 1 "+3V3" H 6965 3823 50  0000 C CNN
+F 2 "" H 6950 3650 50  0001 C CNN
+F 3 "" H 6950 3650 50  0001 C CNN
+	1    6950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5E9883B3
+P 6950 4900
+AR Path="/5E81995D/5E9883B3" Ref="#PWR030"  Part="1" 
+AR Path="/5EAF9122/5E9883B3" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 6950 4650 50  0001 C CNN
+F 1 "GND" H 6955 4727 50  0000 C CNN
+F 2 "" H 6950 4900 50  0001 C CNN
+F 3 "" H 6950 4900 50  0001 C CNN
+	1    6950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5E9883B9
+P 4450 4900
+AR Path="/5E81995D/5E9883B9" Ref="#PWR029"  Part="1" 
+AR Path="/5EAF9122/5E9883B9" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 4450 4650 50  0001 C CNN
+F 1 "GND" H 4455 4727 50  0000 C CNN
+F 2 "" H 4450 4900 50  0001 C CNN
+F 3 "" H 4450 4900 50  0001 C CNN
+	1    4450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5E9883BF
+P 1900 4900
+AR Path="/5E81995D/5E9883BF" Ref="#PWR028"  Part="1" 
+AR Path="/5EAF9122/5E9883BF" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 1900 4650 50  0001 C CNN
+F 1 "GND" H 1905 4727 50  0000 C CNN
+F 2 "" H 1900 4900 50  0001 C CNN
+F 3 "" H 1900 4900 50  0001 C CNN
+	1    1900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5500 7500 5500
+Wire Wire Line
+	7000 5900 7000 5500
+Wire Wire Line
+	6500 5900 7000 5900
+Wire Wire Line
+	7100 5400 7500 5400
+Wire Wire Line
+	7100 5450 7100 5400
+Wire Wire Line
+	6500 5450 7100 5450
+Text Label 5750 5500 0    50   ~ 0
+not_sel
+Wire Wire Line
+	6000 5500 5750 5500
+Wire Wire Line
+	4700 5950 5000 5950
+Wire Wire Line
+	4700 5900 4700 5950
+Wire Wire Line
+	3950 5900 4700 5900
+Wire Wire Line
+	5000 5650 5000 5850
+Wire Wire Line
+	5500 5650 5000 5650
+Wire Wire Line
+	5500 5450 5500 5650
+Wire Wire Line
+	4800 5500 5000 5500
+Wire Wire Line
+	4800 5400 5000 5400
+Text Label 3200 5950 0    50   ~ 0
+not_sel
+Wire Wire Line
+	3450 5950 3200 5950
+Wire Wire Line
+	3950 5450 4250 5450
+Wire Wire Line
+	3000 5500 3000 5900
+Wire Wire Line
+	2950 5900 3000 5900
+Wire Wire Line
+	3000 5500 3450 5500
+Wire Wire Line
+	3200 5400 3450 5400
+Wire Wire Line
+	3200 5450 3200 5400
+Wire Wire Line
+	2950 5450 3200 5450
+Wire Wire Line
+	2200 5950 2450 5950
+Wire Wire Line
+	2200 5850 2450 5850
+Text Label 2100 5500 0    50   ~ 0
+not_sel
+Wire Wire Line
+	2100 5500 2450 5500
+Wire Wire Line
+	2200 5400 2450 5400
+Text HLabel 6000 5950 0    50   Input ~ 0
+sel
+Text HLabel 4800 5500 0    50   Input ~ 0
+sel
+Text HLabel 2200 5950 0    50   Input ~ 0
+sel
+Text HLabel 8000 5450 2    50   Output ~ 0
+out15
+Text HLabel 5500 5900 2    50   Output ~ 0
+out14
+Text HLabel 4250 5450 2    50   Output ~ 0
+out13
+Text HLabel 6000 5850 0    50   Input ~ 0
+b_in15
+Text HLabel 4800 5400 0    50   Input ~ 0
+b_in14
+Text HLabel 2200 5850 0    50   Input ~ 0
+b_in13
+Text HLabel 6000 5400 0    50   Input ~ 0
+a_in15
+Text HLabel 3450 5850 0    50   Input ~ 0
+a_in14
+Text HLabel 2200 5400 0    50   Input ~ 0
+a_in13
+$Comp
+L NANDIRL_components:SN74ALVC00 U13
+U 1 1 5E990E7F
+P 8500 4750
+AR Path="/5E81995D/5E990E7F" Ref="U13"  Part="1" 
+AR Path="/5EAF9122/5E990E7F" Ref="U26"  Part="1" 
+F 0 "U26" H 9150 4400 50  0000 C CNN
+F 1 "SN74ALVC00" H 7600 4400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8250 3250 50  0001 C CNN
+F 3 "" H 8500 4750 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    8500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U12
+U 1 1 5E990E85
+P 6000 4750
+AR Path="/5E81995D/5E990E85" Ref="U12"  Part="1" 
+AR Path="/5EAF9122/5E990E85" Ref="U25"  Part="1" 
+F 0 "U25" H 6650 4400 50  0000 C CNN
+F 1 "SN74ALVC00" H 5100 4400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 3250 50  0001 C CNN
+F 3 "" H 6000 4750 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    6000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NANDIRL_components:SN74ALVC00 U11
+U 1 1 5E990E8B
+P 3450 4750
+AR Path="/5E81995D/5E990E8B" Ref="U11"  Part="1" 
+AR Path="/5EAF9122/5E990E8B" Ref="U24"  Part="1" 
+F 0 "U24" H 4100 4400 50  0000 C CNN
+F 1 "SN74ALVC00" H 2550 4400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3200 3250 50  0001 C CNN
+F 3 "" H 3450 4750 50  0001 C CNN
+F 4 "296-5104-1-ND" H 0   0   50  0001 C CNN "Digikey PN"
+	1    3450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR031
+U 1 1 5E990E91
+P 3200 5050
+AR Path="/5E81995D/5E990E91" Ref="#PWR031"  Part="1" 
+AR Path="/5EAF9122/5E990E91" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 3200 4900 50  0001 C CNN
+F 1 "+3V3" H 3215 5223 50  0000 C CNN
+F 2 "" H 3200 5050 50  0001 C CNN
+F 3 "" H 3200 5050 50  0001 C CNN
+	1    3200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR032
+U 1 1 5E990E97
+P 5750 5050
+AR Path="/5E81995D/5E990E97" Ref="#PWR032"  Part="1" 
+AR Path="/5EAF9122/5E990E97" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 5750 4900 50  0001 C CNN
+F 1 "+3V3" H 5765 5223 50  0000 C CNN
+F 2 "" H 5750 5050 50  0001 C CNN
+F 3 "" H 5750 5050 50  0001 C CNN
+	1    5750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR033
+U 1 1 5E990E9D
+P 8250 5050
+AR Path="/5E81995D/5E990E9D" Ref="#PWR033"  Part="1" 
+AR Path="/5EAF9122/5E990E9D" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 8250 4900 50  0001 C CNN
+F 1 "+3V3" H 8265 5223 50  0000 C CNN
+F 2 "" H 8250 5050 50  0001 C CNN
+F 3 "" H 8250 5050 50  0001 C CNN
+	1    8250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5E990EA3
+P 8250 6300
+AR Path="/5E81995D/5E990EA3" Ref="#PWR036"  Part="1" 
+AR Path="/5EAF9122/5E990EA3" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 8250 6050 50  0001 C CNN
+F 1 "GND" H 8255 6127 50  0000 C CNN
+F 2 "" H 8250 6300 50  0001 C CNN
+F 3 "" H 8250 6300 50  0001 C CNN
+	1    8250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5E990EA9
+P 5750 6300
+AR Path="/5E81995D/5E990EA9" Ref="#PWR035"  Part="1" 
+AR Path="/5EAF9122/5E990EA9" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 5750 6050 50  0001 C CNN
+F 1 "GND" H 5755 6127 50  0000 C CNN
+F 2 "" H 5750 6300 50  0001 C CNN
+F 3 "" H 5750 6300 50  0001 C CNN
+	1    5750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5E990EAF
+P 3200 6300
+AR Path="/5E81995D/5E990EAF" Ref="#PWR034"  Part="1" 
+AR Path="/5EAF9122/5E990EAF" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 3200 6050 50  0001 C CNN
+F 1 "GND" H 3205 6127 50  0000 C CNN
+F 2 "" H 3200 6300 50  0001 C CNN
+F 3 "" H 3200 6300 50  0001 C CNN
+	1    3200 6300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 5850
+NoConn ~ 7500 5950
+NoConn ~ 8000 5900
+NoConn ~ 8500 5400
+NoConn ~ 8500 5500
+NoConn ~ 8500 5850
+NoConn ~ 8500 5950
+NoConn ~ 9000 5450
+NoConn ~ 9000 5900
+Text HLabel 1650 1400 2    50   Output ~ 0
+not_sel
+$EndSCHEMATC
