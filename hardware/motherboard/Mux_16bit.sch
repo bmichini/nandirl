@@ -997,4 +997,6 @@ NoConn ~ 8500 5850
 NoConn ~ 8500 5950
 NoConn ~ 9000 5450
 NoConn ~ 9000 5900
+Text HLabel 1650 1400 2    50   Output ~ 0
+not_sel
 $EndSCHEMATC
