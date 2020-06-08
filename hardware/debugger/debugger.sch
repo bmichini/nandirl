@@ -901,324 +901,217 @@ Text GLabel 6850 2000 0    50   Input ~ 0
 sel_pc_aregmem
 Text GLabel 9400 2000 0    50   Input ~ 0
 sel_pc_aregmem
-Text GLabel 3950 7300 0    50   BiDi ~ 0
+Text GLabel 6500 4150 2    50   BiDi ~ 0
 pc_aregmem0
-Text GLabel 6250 7100 2    50   BiDi ~ 0
+Text GLabel 6500 4250 2    50   BiDi ~ 0
 pc_aregmem1
-Text GLabel 6250 7000 2    50   BiDi ~ 0
+Text GLabel 6500 4650 2    50   BiDi ~ 0
 pc_aregmem2
-Text GLabel 3950 4200 0    50   BiDi ~ 0
+Text GLabel 6500 4550 2    50   BiDi ~ 0
 pc_aregmem3
-Text GLabel 3950 4300 0    50   BiDi ~ 0
+Text GLabel 6500 5050 2    50   BiDi ~ 0
 pc_aregmem4
-Text GLabel 3950 7100 0    50   BiDi ~ 0
+Text GLabel 6500 4950 2    50   BiDi ~ 0
 pc_aregmem5
-Text GLabel 3950 4400 0    50   BiDi ~ 0
+Text GLabel 6500 4350 2    50   BiDi ~ 0
 pc_aregmem6
-Text GLabel 3950 4500 0    50   BiDi ~ 0
+Text GLabel 6500 4450 2    50   BiDi ~ 0
 pc_aregmem7
-Text GLabel 3950 6300 0    50   BiDi ~ 0
+Text GLabel 6500 3850 2    50   BiDi ~ 0
 pc_aregmem8
-Text GLabel 3950 6400 0    50   BiDi ~ 0
+Text GLabel 6500 3750 2    50   BiDi ~ 0
 pc_aregmem9
-Text GLabel 3950 6500 0    50   BiDi ~ 0
+Text GLabel 6500 4050 2    50   BiDi ~ 0
 pc_aregmem10
-Text GLabel 3950 6600 0    50   BiDi ~ 0
+Text GLabel 6500 3950 2    50   BiDi ~ 0
 pc_aregmem11
-Text GLabel 3950 7400 0    50   BiDi ~ 0
+Text GLabel 6500 5250 2    50   BiDi ~ 0
 pc_aregmem12
-Text GLabel 3950 7500 0    50   BiDi ~ 0
+Text GLabel 6500 5150 2    50   BiDi ~ 0
 pc_aregmem13
-Text GLabel 6250 7400 2    50   BiDi ~ 0
+Text GLabel 4300 5150 0    50   BiDi ~ 0
 pc_aregmem14
-Text GLabel 6250 7500 2    50   BiDi ~ 0
+Text GLabel 4300 5250 0    50   BiDi ~ 0
 pc_aregmem15
-Text GLabel 3950 3500 0    50   BiDi ~ 0
+Text GLabel 4300 3550 0    50   BiDi ~ 0
 inst_dreg0
-Text GLabel 3950 7200 0    50   BiDi ~ 0
+Text GLabel 4300 3650 0    50   BiDi ~ 0
 inst_dreg1
-Text GLabel 3950 4000 0    50   BiDi ~ 0
+Text GLabel 4300 3750 0    50   BiDi ~ 0
 inst_dreg2
-Text GLabel 3950 4100 0    50   BiDi ~ 0
+Text GLabel 4300 3850 0    50   BiDi ~ 0
 inst_dreg3
-Text GLabel 3950 3900 0    50   BiDi ~ 0
+Text GLabel 4300 3950 0    50   BiDi ~ 0
 inst_dreg4
-Text GLabel 6250 7300 2    50   BiDi ~ 0
+Text GLabel 4300 4050 0    50   BiDi ~ 0
 inst_dreg5
-Text GLabel 6250 7200 2    50   BiDi ~ 0
+Text GLabel 4300 4150 0    50   BiDi ~ 0
 inst_dreg6
-Text GLabel 3950 3800 0    50   BiDi ~ 0
+Text GLabel 4300 4250 0    50   BiDi ~ 0
 inst_dreg7
-Text GLabel 3950 3300 0    50   BiDi ~ 0
+Text GLabel 4300 4350 0    50   BiDi ~ 0
 inst_dreg8
-Text GLabel 3950 3400 0    50   BiDi ~ 0
+Text GLabel 4300 4450 0    50   BiDi ~ 0
 inst_dreg9
-Text GLabel 3950 5200 0    50   BiDi ~ 0
+Text GLabel 4300 4550 0    50   BiDi ~ 0
 inst_dreg10
-Text GLabel 3950 5300 0    50   BiDi ~ 0
+Text GLabel 4300 4650 0    50   BiDi ~ 0
 inst_dreg11
-Text GLabel 3950 3600 0    50   BiDi ~ 0
+Text GLabel 4300 4750 0    50   BiDi ~ 0
 inst_dreg12
-Text GLabel 3950 3700 0    50   BiDi ~ 0
+Text GLabel 4300 4950 0    50   BiDi ~ 0
 inst_dreg13
-Text GLabel 3950 4900 0    50   BiDi ~ 0
+Text GLabel 4300 5050 0    50   BiDi ~ 0
 inst_dreg14
-Text GLabel 3950 5000 0    50   BiDi ~ 0
+Text GLabel 4300 5350 0    50   BiDi ~ 0
 inst_dreg15
-Wire Wire Line
-	3950 3200 3250 3200
-$Comp
-L power:GND #PWR0127
-U 1 1 5EE0C9EF
-P 3250 3200
-F 0 "#PWR0127" H 3250 2950 50  0001 C CNN
-F 1 "GND" H 3255 3027 50  0000 C CNN
-F 2 "" H 3250 3200 50  0001 C CNN
-F 3 "" H 3250 3200 50  0001 C CNN
-	1    3250 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 5EE37AC8
-P 3200 7000
-F 0 "#PWR0128" H 3200 6750 50  0001 C CNN
-F 1 "GND" H 3205 6827 50  0000 C CNN
-F 2 "" H 3200 7000 50  0001 C CNN
-F 3 "" H 3200 7000 50  0001 C CNN
-	1    3200 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 4600 3150 4600
-$Comp
-L power:+3V3 #PWR0129
-U 1 1 5EE3A1A6
-P 3150 4600
-F 0 "#PWR0129" H 3150 4450 50  0001 C CNN
-F 1 "+3V3" H 3165 4773 50  0000 C CNN
-F 2 "" H 3150 4600 50  0001 C CNN
-F 3 "" H 3150 4600 50  0001 C CNN
-	1    3150 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 6900 6500 6900
-$Comp
-L power:+3V3 #PWR0130
-U 1 1 5EE3B9CC
-P 6500 6900
-F 0 "#PWR0130" H 6500 6750 50  0001 C CNN
-F 1 "+3V3" H 6515 7073 50  0000 C CNN
-F 2 "" H 6500 6900 50  0001 C CNN
-F 3 "" H 6500 6900 50  0001 C CNN
-	1    6500 6900
-	1    0    0    -1  
-$EndComp
-Text GLabel 3950 5500 0    50   Output ~ 0
+Text GLabel 4300 5750 0    50   Output ~ 0
 rom_oe
-Text GLabel 3950 4700 0    50   Output ~ 0
+Text GLabel 6500 5550 2    50   Output ~ 0
 reset
-Text GLabel 3950 6100 0    50   Output ~ 0
+Text GLabel 4300 5450 0    50   Output ~ 0
 clk_a_pre
-Text GLabel 3950 6200 0    50   Output ~ 0
+Text GLabel 4300 5550 0    50   Output ~ 0
 clk_b_pre
-$Comp
-L teensy:Teensy3.6 U1
-U 1 1 5EE5E947
-P 5100 5350
-F 0 "U1" H 5100 7787 60  0000 C CNN
-F 1 "Teensy3.6" H 5100 7681 60  0000 C CNN
-F 2 "nandirl logo:Teensy35_36" H 5100 7681 60  0001 C CNN
-F 3 "" H 5100 5400 60  0000 C CNN
-	1    5100 5350
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1100 4100
-NoConn ~ 2600 7300
-NoConn ~ 2600 7400
 $Comp
 L NANDIRL_components:PI6C49CB04AQ U10
 U 1 1 5EE7CA40
-P 8100 3500
-F 0 "U10" H 8100 3615 50  0000 C CNN
-F 1 "PI6C49CB04AQ" H 8100 3524 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8100 3500 50  0001 C CNN
-F 3 "" H 8100 3500 50  0001 C CNN
-F 4 "31-PI6C49CB04AQ2WEXCT-ND" H 8100 3500 50  0001 C CNN "Digikey PN"
-	1    8100 3500
+P 8800 3200
+F 0 "U10" H 8800 3315 50  0000 C CNN
+F 1 "PI6C49CB04AQ" H 8800 3224 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8800 3200 50  0001 C CNN
+F 3 "" H 8800 3200 50  0001 C CNN
+F 4 "31-PI6C49CB04AQ2WEXCT-ND" H 8800 3200 50  0001 C CNN "Digikey PN"
+	1    8800 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 3650 0    50   Input ~ 0
+Text GLabel 8500 3350 0    50   Input ~ 0
 clk_a_pre
-Text GLabel 7800 3750 0    50   Output ~ 0
+Text GLabel 8500 3450 0    50   Output ~ 0
 clk_a
-NoConn ~ 7800 3850
-NoConn ~ 7800 3950
-NoConn ~ 8400 3950
+NoConn ~ 8500 3550
+NoConn ~ 8500 3650
+NoConn ~ 9100 3650
 $Comp
 L Device:C_Small C9
 U 1 1 5EE95F15
-P 9150 3800
-F 0 "C9" H 9242 3846 50  0000 L CNN
-F 1 "0.1uF" H 9242 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9150 3800 50  0001 C CNN
-F 3 "~" H 9150 3800 50  0001 C CNN
-F 4 "399-C1206C104K5RAC7800CT-ND" H 9150 3800 50  0001 C CNN "Digikey PN"
-	1    9150 3800
+P 9850 3500
+F 0 "C9" H 9942 3546 50  0000 L CNN
+F 1 "0.1uF" H 9942 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9850 3500 50  0001 C CNN
+F 3 "~" H 9850 3500 50  0001 C CNN
+F 4 "399-C1206C104K5RAC7800CT-ND" H 9850 3500 50  0001 C CNN "Digikey PN"
+	1    9850 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 3750 8450 3750
+	9100 3450 9150 3450
 Wire Wire Line
-	9000 3750 9000 3700
+	9700 3450 9700 3400
 Wire Wire Line
-	9000 3700 9150 3700
+	9700 3400 9850 3400
 Wire Wire Line
-	8400 3850 9000 3850
+	9100 3550 9700 3550
 Wire Wire Line
-	9000 3850 9000 3900
+	9700 3550 9700 3600
 Wire Wire Line
-	9000 3900 9150 3900
+	9700 3600 9850 3600
 $Comp
 L power:GND #PWR02
 U 1 1 5EE9EE38
-P 9150 3900
-F 0 "#PWR02" H 9150 3650 50  0001 C CNN
-F 1 "GND" H 9155 3727 50  0000 C CNN
-F 2 "" H 9150 3900 50  0001 C CNN
-F 3 "" H 9150 3900 50  0001 C CNN
-	1    9150 3900
+P 9850 3600
+F 0 "#PWR02" H 9850 3350 50  0001 C CNN
+F 1 "GND" H 9855 3427 50  0000 C CNN
+F 2 "" H 9850 3600 50  0001 C CNN
+F 3 "" H 9850 3600 50  0001 C CNN
+	1    9850 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR01
 U 1 1 5EEA0B9D
-P 9150 3700
-F 0 "#PWR01" H 9150 3550 50  0001 C CNN
-F 1 "+3V3" H 9165 3873 50  0000 C CNN
-F 2 "" H 9150 3700 50  0001 C CNN
-F 3 "" H 9150 3700 50  0001 C CNN
-	1    9150 3700
+P 9850 3400
+F 0 "#PWR01" H 9850 3250 50  0001 C CNN
+F 1 "+3V3" H 9865 3573 50  0000 C CNN
+F 2 "" H 9850 3400 50  0001 C CNN
+F 3 "" H 9850 3400 50  0001 C CNN
+	1    9850 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L NANDIRL_components:PI6C49CB04AQ U11
 U 1 1 5EEA4214
-P 8100 4350
-F 0 "U11" H 8100 4465 50  0000 C CNN
-F 1 "PI6C49CB04AQ" H 8100 4374 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8100 4350 50  0001 C CNN
-F 3 "" H 8100 4350 50  0001 C CNN
-F 4 "31-PI6C49CB04AQ2WEXCT-ND" H 8100 4350 50  0001 C CNN "Digikey PN"
-	1    8100 4350
+P 8800 4050
+F 0 "U11" H 8800 4165 50  0000 C CNN
+F 1 "PI6C49CB04AQ" H 8800 4074 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8800 4050 50  0001 C CNN
+F 3 "" H 8800 4050 50  0001 C CNN
+F 4 "31-PI6C49CB04AQ2WEXCT-ND" H 8800 4050 50  0001 C CNN "Digikey PN"
+	1    8800 4050
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 4500 0    50   Input ~ 0
+Text GLabel 8500 4200 0    50   Input ~ 0
 clk_b_pre
-Text GLabel 7800 4600 0    50   Output ~ 0
+Text GLabel 8500 4300 0    50   Output ~ 0
 clk_b
-NoConn ~ 7800 4700
-NoConn ~ 7800 4800
-NoConn ~ 8400 4800
+NoConn ~ 8500 4400
+NoConn ~ 8500 4500
+NoConn ~ 9100 4500
 $Comp
 L Device:C_Small C10
 U 1 1 5EEA4221
-P 9150 4650
-F 0 "C10" H 9242 4696 50  0000 L CNN
-F 1 "0.1uF" H 9242 4605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9150 4650 50  0001 C CNN
-F 3 "~" H 9150 4650 50  0001 C CNN
-F 4 "399-C1206C104K5RAC7800CT-ND" H 9150 4650 50  0001 C CNN "Digikey PN"
-	1    9150 4650
+P 9850 4350
+F 0 "C10" H 9942 4396 50  0000 L CNN
+F 1 "0.1uF" H 9942 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9850 4350 50  0001 C CNN
+F 3 "~" H 9850 4350 50  0001 C CNN
+F 4 "399-C1206C104K5RAC7800CT-ND" H 9850 4350 50  0001 C CNN "Digikey PN"
+	1    9850 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 4600 8500 4600
+	9100 4300 9200 4300
 Wire Wire Line
-	9000 4600 9000 4550
+	9700 4300 9700 4250
 Wire Wire Line
-	9000 4550 9150 4550
+	9700 4250 9850 4250
 Wire Wire Line
-	8400 4700 9000 4700
+	9100 4400 9700 4400
 Wire Wire Line
-	9000 4700 9000 4750
+	9700 4400 9700 4450
 Wire Wire Line
-	9000 4750 9150 4750
+	9700 4450 9850 4450
 $Comp
 L power:GND #PWR04
 U 1 1 5EEA422D
-P 9150 4750
-F 0 "#PWR04" H 9150 4500 50  0001 C CNN
-F 1 "GND" H 9155 4577 50  0000 C CNN
-F 2 "" H 9150 4750 50  0001 C CNN
-F 3 "" H 9150 4750 50  0001 C CNN
-	1    9150 4750
+P 9850 4450
+F 0 "#PWR04" H 9850 4200 50  0001 C CNN
+F 1 "GND" H 9855 4277 50  0000 C CNN
+F 2 "" H 9850 4450 50  0001 C CNN
+F 3 "" H 9850 4450 50  0001 C CNN
+	1    9850 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR03
 U 1 1 5EEA4233
-P 9150 4550
-F 0 "#PWR03" H 9150 4400 50  0001 C CNN
-F 1 "+3V3" H 9165 4723 50  0000 C CNN
-F 2 "" H 9150 4550 50  0001 C CNN
-F 3 "" H 9150 4550 50  0001 C CNN
-	1    9150 4550
+P 9850 4250
+F 0 "#PWR03" H 9850 4100 50  0001 C CNN
+F 1 "+3V3" H 9865 4423 50  0000 C CNN
+F 2 "" H 9850 4250 50  0001 C CNN
+F 3 "" H 9850 4250 50  0001 C CNN
+	1    9850 4250
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10200 2200
-NoConn ~ 6250 3200
-NoConn ~ 6250 3300
-NoConn ~ 6250 3400
-NoConn ~ 6250 3500
-NoConn ~ 6250 3600
-NoConn ~ 6250 3700
-NoConn ~ 6250 3800
-NoConn ~ 6250 3900
-NoConn ~ 6250 4000
-NoConn ~ 6250 4100
-NoConn ~ 6250 4200
-NoConn ~ 6250 4300
-NoConn ~ 6250 4400
-NoConn ~ 6250 4500
-NoConn ~ 6250 4600
-NoConn ~ 6250 4700
-NoConn ~ 6250 4800
-NoConn ~ 6250 4900
-NoConn ~ 6250 5000
-NoConn ~ 6250 5100
-NoConn ~ 6250 5200
-NoConn ~ 6250 5300
-NoConn ~ 6250 5400
-NoConn ~ 6250 5500
-NoConn ~ 6250 5600
-NoConn ~ 6250 5700
-NoConn ~ 6250 5800
-NoConn ~ 6250 5900
-NoConn ~ 6250 6000
-NoConn ~ 6250 6300
-NoConn ~ 6250 6400
-NoConn ~ 6250 6500
-NoConn ~ 6250 6600
-NoConn ~ 6250 6700
-NoConn ~ 6250 6800
-NoConn ~ 3950 5600
-NoConn ~ 3950 5700
-NoConn ~ 3950 5800
-NoConn ~ 3950 5900
-NoConn ~ 3950 6000
-NoConn ~ 3950 6800
-NoConn ~ 3950 6900
-Text GLabel 3950 5100 0    50   Output ~ 0
+Text GLabel 6500 5350 2    50   Output ~ 0
 sel_inst_dreg
-Text GLabel 3950 4800 0    50   Output ~ 0
+Text GLabel 6500 5450 2    50   Output ~ 0
 sel_pc_aregmem
 Wire Wire Line
-	8400 3650 8450 3650
-Wire Wire Line
-	3200 7000 3950 7000
-Text GLabel 3950 5400 0    50   Output ~ 0
+	9100 3350 9150 3350
+Text GLabel 4300 5650 0    50   Output ~ 0
 rom_we
 $Comp
 L power:GND #PWR06
@@ -1332,16 +1225,232 @@ Connection ~ 1200 3800
 Wire Wire Line
 	1200 3800 1600 3800
 Wire Wire Line
-	8450 3650 8450 3750
-Connection ~ 8450 3750
+	9150 3350 9150 3450
+Connection ~ 9150 3450
 Wire Wire Line
-	8450 3750 9000 3750
+	9150 3450 9700 3450
 Wire Wire Line
-	8400 4500 8500 4500
+	9100 4200 9200 4200
 Wire Wire Line
-	8500 4500 8500 4600
-Connection ~ 8500 4600
+	9200 4200 9200 4300
+Connection ~ 9200 4300
 Wire Wire Line
-	8500 4600 9000 4600
-NoConn ~ 3950 6700
+	9200 4300 9700 4300
+$Comp
+L teensy:Teensy4.1 U1
+U 1 1 5F2FE2DF
+P 5400 5600
+F 0 "U1" H 5400 8165 50  0000 C CNN
+F 1 "Teensy4.1" H 5400 8074 50  0000 C CNN
+F 2 "nandirl logo:Teensy41" H 5000 6000 50  0001 C CNN
+F 3 "" H 5000 6000 50  0001 C CNN
+	1    5400 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3450 3700 3450
+$Comp
+L power:GND #PWR0127
+U 1 1 5F4926DB
+P 3700 3450
+F 0 "#PWR0127" H 3700 3200 50  0001 C CNN
+F 1 "GND" H 3705 3277 50  0000 C CNN
+F 2 "" H 3700 3450 50  0001 C CNN
+F 3 "" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4850 3600 4850
+$Comp
+L power:+3V3 #PWR0128
+U 1 1 5F494937
+P 3600 4850
+F 0 "#PWR0128" H 3600 4700 50  0001 C CNN
+F 1 "+3V3" H 3615 5023 50  0000 C CNN
+F 2 "" H 3600 4850 50  0001 C CNN
+F 3 "" H 3600 4850 50  0001 C CNN
+	1    3600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4850 7200 4850
+$Comp
+L power:GND #PWR0129
+U 1 1 5F496CF0
+P 7200 4850
+F 0 "#PWR0129" H 7200 4600 50  0001 C CNN
+F 1 "GND" H 7205 4677 50  0000 C CNN
+F 2 "" H 7200 4850 50  0001 C CNN
+F 3 "" H 7200 4850 50  0001 C CNN
+	1    7200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3550 7200 3550
+$Comp
+L power:GND #PWR0130
+U 1 1 5F498FAD
+P 7200 3550
+F 0 "#PWR0130" H 7200 3300 50  0001 C CNN
+F 1 "GND" H 7205 3377 50  0000 C CNN
+F 2 "" H 7200 3550 50  0001 C CNN
+F 3 "" H 7200 3550 50  0001 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6500 5750
+NoConn ~ 6500 5650
+NoConn ~ 6500 3300
+NoConn ~ 6500 3450
+NoConn ~ 6500 3650
+NoConn ~ 6500 4750
+NoConn ~ 4300 5950
+NoConn ~ 4300 6050
+NoConn ~ 4300 6200
+NoConn ~ 4300 6300
+NoConn ~ 4300 6400
+NoConn ~ 4300 6500
+NoConn ~ 4300 6600
+NoConn ~ 5100 6900
+NoConn ~ 5250 6900
+NoConn ~ 5400 6900
+NoConn ~ 5550 6900
+NoConn ~ 5700 6900
+Text GLabel 6500 6000 2    50   Output ~ 0
+R-
+Text GLabel 6500 6200 2    50   Output ~ 0
+T+
+Text GLabel 6500 6300 2    50   Output ~ 0
+T-
+Text GLabel 6500 6400 2    50   Output ~ 0
+LED
+Text GLabel 6500 6500 2    50   Output ~ 0
+R+
+Wire Wire Line
+	6500 6100 6800 6100
+$Comp
+L power:GND #PWR0131
+U 1 1 5F4B9F3B
+P 6800 6100
+F 0 "#PWR0131" H 6800 5850 50  0001 C CNN
+F 1 "GND" H 6805 5927 50  0000 C CNN
+F 2 "" H 6800 6100 50  0001 C CNN
+F 3 "" H 6800 6100 50  0001 C CNN
+	1    6800 6100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9850 3400
+Connection ~ 9850 3600
+Connection ~ 9850 4250
+Connection ~ 9850 4450
+$Comp
+L Connector:RJ45_Amphenol_RJMG1BD3B8K1ANR J3
+U 1 1 5F4CB73F
+P 9600 5550
+F 0 "J3" H 9600 6275 50  0000 C CNN
+F 1 "RJ45_Amphenol_RJMG1BD3B8K1ANR" H 9600 6184 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR" H 9600 6250 50  0001 C CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 9600 6350 50  0001 C CNN
+F 4 "RJMG1BD3B8K1ANR-ND" H 9600 5550 50  0001 C CNN "Digikey PN"
+	1    9600 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 5050 0    50   Input ~ 0
+T+
+Text GLabel 8700 5250 0    50   Input ~ 0
+T-
+Text GLabel 8700 5350 0    50   Input ~ 0
+R+
+Text GLabel 8700 5550 0    50   Input ~ 0
+R-
+Text GLabel 8700 5750 0    50   Input ~ 0
+LED
+Wire Wire Line
+	8700 5850 8300 5850
+$Comp
+L power:GND #PWR0132
+U 1 1 5F4D085D
+P 8300 5850
+F 0 "#PWR0132" H 8300 5600 50  0001 C CNN
+F 1 "GND" H 8305 5677 50  0000 C CNN
+F 2 "" H 8300 5850 50  0001 C CNN
+F 3 "" H 8300 5850 50  0001 C CNN
+	1    8300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5F4D45DB
+P 9600 6250
+F 0 "#PWR0133" H 9600 6000 50  0001 C CNN
+F 1 "GND" H 9605 6077 50  0000 C CNN
+F 2 "" H 9600 6250 50  0001 C CNN
+F 3 "" H 9600 6250 50  0001 C CNN
+	1    9600 6250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10500 5950
+NoConn ~ 8700 5950
+NoConn ~ 8700 6050
+$Comp
+L Device:C_Small C11
+U 1 1 5F4E4557
+P 8050 5150
+F 0 "C11" H 8142 5196 50  0000 L CNN
+F 1 "0.1uF" H 8142 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8050 5150 50  0001 C CNN
+F 3 "~" H 8050 5150 50  0001 C CNN
+F 4 "399-C1206C104K5RAC7800CT-ND" H 8050 5150 50  0001 C CNN "Digikey PN"
+	1    8050 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5F4EC2D1
+P 8050 5450
+F 0 "C12" H 8142 5496 50  0000 L CNN
+F 1 "0.1uF" H 8142 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8050 5450 50  0001 C CNN
+F 3 "~" H 8050 5450 50  0001 C CNN
+F 4 "399-C1206C104K5RAC7800CT-ND" H 8050 5450 50  0001 C CNN "Digikey PN"
+	1    8050 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8150 5150 8700 5150
+Wire Wire Line
+	8150 5450 8700 5450
+Wire Wire Line
+	7950 5150 7950 5450
+Connection ~ 7950 5450
+Wire Wire Line
+	7950 5450 7950 5650
+$Comp
+L power:GND #PWR0134
+U 1 1 5F4FE599
+P 7950 5650
+F 0 "#PWR0134" H 7950 5400 50  0001 C CNN
+F 1 "GND" H 7955 5477 50  0000 C CNN
+F 2 "" H 7950 5650 50  0001 C CNN
+F 3 "" H 7950 5650 50  0001 C CNN
+	1    7950 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7300 2600 7400
+Wire Wire Line
+	2600 7300 3050 7300
+Connection ~ 2600 7300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F5A5F06
+P 3050 7300
+F 0 "#PWR?" H 3050 7150 50  0001 C CNN
+F 1 "+3V3" H 3065 7473 50  0000 C CNN
+F 2 "" H 3050 7300 50  0001 C CNN
+F 3 "" H 3050 7300 50  0001 C CNN
+	1    3050 7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

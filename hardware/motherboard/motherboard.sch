@@ -1681,8 +1681,6 @@ Wire Wire Line
 Connection ~ 4850 9800
 Wire Wire Line
 	4000 9800 4000 9900
-Text GLabel 10550 2600 0    50   Input ~ 0
-rom_addr15
 Wire Wire Line
 	9800 2800 9800 2700
 Wire Wire Line
@@ -1691,8 +1689,6 @@ Wire Wire Line
 	9800 2800 10550 2800
 Wire Wire Line
 	9500 2900 10550 2900
-Text GLabel 10550 2700 0    50   Input ~ 0
-rom_addr16
 Text GLabel 10550 3000 0    50   Input ~ 0
 rom_oe
 Text GLabel 10550 3100 0    50   Input ~ 0
@@ -1701,10 +1697,6 @@ Text GLabel 7800 1150 0    50   Output ~ 0
 rom_oe
 Text GLabel 7800 5250 0    50   Output ~ 0
 rom_we
-Text GLabel 7800 8650 0    50   Output ~ 0
-rom_addr15
-Text GLabel 7800 8750 0    50   Output ~ 0
-rom_addr16
 Wire Wire Line
 	7800 8850 7350 8850
 Wire Wire Line
@@ -2235,4 +2227,22 @@ F 4 "EG4914-ND" H 9550 9550 50  0001 C CNN "Digikey PN"
 $EndComp
 Wire Wire Line
 	9750 9550 9900 9550
+Wire Wire Line
+	7800 8750 7800 8650
+Wire Wire Line
+	7800 8650 7200 8650
+Connection ~ 7800 8650
+$Comp
+L power:+3V3 #PWR0129
+U 1 1 5F572908
+P 7200 8650
+F 0 "#PWR0129" H 7200 8500 50  0001 C CNN
+F 1 "+3V3" H 7215 8823 50  0000 C CNN
+F 2 "" H 7200 8650 50  0001 C CNN
+F 3 "" H 7200 8650 50  0001 C CNN
+	1    7200 8650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10550 2600
+NoConn ~ 10550 2700
 $EndSCHEMATC

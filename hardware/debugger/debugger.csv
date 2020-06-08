@@ -1,0 +1,7 @@
+Reference, Quantity, Value, Footprint, Datasheet, Digikey PN
+C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 ,12,"0.1uF","Capacitor_SMD:C_1206_3216Metric","~","399-C1206C104K5RAC7800CT-ND"
+J2 J1 ,2,"DB37_Male","Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"," ~","AE10986-ND"
+J3 ,1,"RJ45_Amphenol_RJMG1BD3B8K1ANR","Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR","https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF","RJMG1BD3B8K1ANR-ND"
+U1 ,1,"Teensy4.1","nandirl logo:Teensy41",""
+U10 U11 ,2,"PI6C49CB04AQ","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","","31-PI6C49CB04AQ2WEXCT-ND"
+U2 U3 U4 U5 U6 U7 U8 U9 ,8,"SN74CBTLV3257PWR","Package_SO:TSSOP-16_4.4x5mm_P0.65mm","","296-9138-1-ND"

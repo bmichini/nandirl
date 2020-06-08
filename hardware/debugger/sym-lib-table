@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name debugger-rescue)(type Legacy)(uri ${KIPRJMOD}/debugger-rescue.lib)(options "")(descr ""))
+)
