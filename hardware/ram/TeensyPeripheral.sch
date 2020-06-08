@@ -266,4 +266,25 @@ $EndComp
 NoConn ~ 8350 5300
 NoConn ~ 8350 5400
 NoConn ~ 10150 5300
+NoConn ~ 6600 3350
+NoConn ~ 6600 3950
+NoConn ~ 6600 4050
+NoConn ~ 6600 4150
+NoConn ~ 6600 4250
+NoConn ~ 6600 4350
+NoConn ~ 6600 2250
+NoConn ~ 6600 2050
+NoConn ~ 6600 1900
+NoConn ~ 5200 5500
+NoConn ~ 5350 5500
+NoConn ~ 5500 5500
+NoConn ~ 5650 5500
+NoConn ~ 5800 5500
+NoConn ~ 4400 4550
+NoConn ~ 4400 4650
+NoConn ~ 4400 4800
+NoConn ~ 4400 4900
+NoConn ~ 4400 5000
+NoConn ~ 4400 5100
+NoConn ~ 4400 5200
 $EndSCHEMATC
