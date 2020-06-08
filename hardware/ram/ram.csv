@@ -1,0 +1,11 @@
+Reference, Quantity, Value, Footprint, Datasheet, Digikey PN
+C2 C1 ,2,"100uF","Capacitor_THT:CP_Radial_D8.0mm_P2.50mm","~","P15797CT-ND"
+C3 C4 ,2,"100nF","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm","~","BC5229CT-ND"
+C6 C5 C7 C8 ,4,"0.1uF","Capacitor_SMD:C_1206_3216Metric","~","399-C1206C104K5RAC7800CT-ND"
+J1 ,1,"RJ45_Amphenol_RJMG1BD3B8K1ANR","Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR","https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF","RJMG1BD3B8K1ANR-ND"
+J3 ,1,"DB25_Male","Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"," ~","AE10980-ND"
+J4 ,1,"DB37_Male","Connector_Dsub:DSUB-37_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"," ~","AE10986-ND"
+U1 ,1,"71V016SA12PHGI","Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm","","800-2609-5-ND"
+U12 ,1,"Teensy4.1","nandirl logo:Teensy41",""
+U3 U2 U4 U11 ,4,"SN74HCS00PWR","Package_SO:TSSOP-14_4.4x5mm_P0.65mm","","296-SN74HCS00PWRCT-ND"
+U7 U10 U6 U9 U5 U8 ,6,"74LCX573FT","Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm","","74LCX573FT(AJ)CT-ND"
