@@ -4,6 +4,10 @@ $CMP 71V016SA12PHGI
 D SRAM 1Mb (64K x 16)
 $ENDCMP
 #
+$CMP 74LCX573FT
+D D-Type Latch 1 Channel 8:8 IC Tri-State
+$ENDCMP
+#
 $CMP PI6C49CB04AQ
 D 1 To 4 Automotive Clock Buffer
 $ENDCMP
