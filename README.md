@@ -1,10 +1,36 @@
 # nandirl
-Real-life hardware implementation of the nand2tetris "Hack" computer architecture.
+Real-life open hardware implementation of the [nand2tetris](https://www.nand2tetris.org/) "Hack" computer architecture using custom printed circuit boards and discrete NAND gates. To my knowledge, this is the first NAND-based hardware implementation of the Hack computer. The hardware design is modular, so that individual boards roughly correspond to the project assignments presented in the nand2tetris course. I used the free and open source [KiCad](https://kicad-pcb.org/) design suite for all schematic capture and PCB design. Blog-style chapters explaining the nandirl design are accompanied by tutorials intended to cover the basics of DIY hardware design.
+
+>**Before you dig in, a quick request:**
+> I built this project during the global COVID-19 pandemic and the ensuing months-long stay-at-home order. I am very fortunate to be in a position where I can work remotely during the day and also have the means to work on this project at night. I am grateful for that opportunity, but also realize that it is a privilege that many in my community do not have. Underserved communities have been disproportionately affected by the COVID outbreak for many reasons, including the financial necessity to continue working high-exposure jobs throughout the pandemic and the many institutional disadvantages that lead to worse health outcomes. In recognition of this, for every $1 that I spent on hardware and components for this project, I donated $1 spread across the charities in my area (listed below) that have been assisting the underserved through the COVID crisis. If you find this project interesting and you have the financial means to contribute, I'd encourage you to donate to these organizations or similar charities in your area. Thanks for your consideration!
+
+## Table of Contents
+For those curious about how the hardware was designed and built, the chapters below are my best attempt at documenting the project. Each chapter has a nandirl design component, followed by a generic hardware design component. The latter may be useful for hobbyists interested in the overall process of going from a circuit idea to a working PCB. For the HW design components, the free/open source KiCad suite is used.
+
+**Disclaimer:** I am definitely not an expert when it comes to hardware design. It is not my day job. My credentials are based solely on informal DIY experience and bumbling trial-and-error. Consider yourself warned!
+
+| Chapter | nandirl | HW design |
+| --- | --- | --- |
+| 0 | Intro: The nand2tetris "Hack" Architecture | Intro: DIY Hardware Design Overview |
+| 1 | 1-bit Register | Schematic Capture and Custom Components |
+| 2 | 16-bit Register | Nets and Heirarchical Schematics |
+| 3 | Program Counter | Component Selection (Digikey+Datasheets) |
+| 4 | Read-only Memory (ROM) | PCB Layout and Routing |
+| 5 | Random Access Memory (RAM) | Design Checks and Fabrication Outputs |
+| 6 | Arithmetic Logic Unit (ALU) | PCB Fabrication, BOMs, and Stencils |
+| 7 | Clock Generator | PCB Assembly, Hotplate, and Solder Bridges |
+| 8 | Motherboard | Board Bring-up Checklist |
+| 9 | Debugger | Rework (Nothing Works the First Time) |
+| 10 | Running Programs | Useful Equipment, Tools, and Toys |
+
+
+## License
+The hardware design files and software tools found in this repository are open source and released under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0)
 
 ## Chapter 0: nand2tetris and the "Hack" computer architecture
 Recently I've been obsessed with the Apollo spaceflight program, and of particular fascination to me is the Apollo Guidance Computer (AGC). There's a whole lot to say on the topic, but for the purposes of this introduction: I was reading one day that the logic circuits of the AGC are constructed entirely from NOR (Not OR) gates. What's a NOR gate? How could you make a computer out of them? What are logic circuits? That's when it hit me -- even though I've been programming them for over 20 years, *I have no idea how computers actually work in hardware*. I decided that I could no longer continue living in ignorance of a technology that so profoundly shapes our everyday lives. So I have endeavored to learn how computers work by constructing one from primitive logic gates, but instead of the NOR gates used on the AGC my computer will be made from NAND (Not AND) gates.
 
-Starting out I obviously had no idea what goes into the design of such a computer, but luckily there are some wonderful and generous people out there who have gone out of their way to provide a comprehensive and free online course on the topic. The design I'll be using for my computer is based on the [nand2tetris](https://www.nand2tetris.org/) project that guides students through the architecture of a simple computer based on NAND gates, which the authors have named the "Hack" computer. If you're wondering what a NAND gate is, [this is a good place to start](https://logic.ly/lessons/nand-gate/). The lectures subsequently take students through the software implementation of Tetris for the Hack computer design. The course is awesome and I highly recommend it to anyone who wants to learn how computers work from the ground up. Given that the syllabus is focused on computer *design*, there is no actual hardware and instead the computer is constructed using software that simulates hardware. The instructors don't focus on how you would build this computer *in real life*, and I haven't been able to find anyone on the internet who has actually done it. Hence I've named my project **nandirl**.
+Starting out I obviously had no idea what goes into the design of such a computer, but luckily there are some wonderful and generous people out there who have gone out of their way to provide a comprehensive and free online course on the topic. The design I'll be using for my computer is based on the [nand2tetris](https://www.nand2tetris.org/) project that guides students through the architecture of a simple computer based on NAND gates, which the authors have named the "Hack" computer. If you're wondering what a NAND gate is, [this is a good place to start](https://logic.ly/lessons/nand-gate/). The lectures subsequently take students through the software implementation of Tetris for the Hack computer design. The course is awesome and I highly recommend it to anyone who wants to learn how computers work from the ground up. Given that the syllabus is focused on computer hardware and software *design*, there is no actual hardware and instead the computer is constructed using software that simulates hardware. The instructors don't focus on how you would build this computer *in real life*, and I haven't been able to find anyone on the internet who has actually done it. Hence I've named my project **nandirl**.
 
 The remainder of this chapter is a high-level overview of the computer architecture that may be helpful in understanding how all of the components will ultimately fit together. Check out the [nand2tetris](https://www.nand2tetris.org/) course for a better explanation (it assumes no previous technical training or computer knowledge). 
 
@@ -15,17 +41,18 @@ Source: [https://www.nand2tetris.org/course](https://www.nand2tetris.org/course)
 ROM stands for "Read Only Memory". The ROM chip has a simple job in life -- given an *address*, the ROM provides an *instruction*. An address is simply a number, as is an instruction. Abstractly, imagine the ROM chip as a filing cabinet with many folders inside of it. The ROM chip gets an address, looks for the folder with the matching label, and hands back the contents of that folder (the instruction).
 
 >More concretely, computers store numbers in *binary*. What's binary? The decimal number 5 in binary is **101**, because:
- >**1**x2<sup>2</sup> + **0**x2<sup>1</sup> + **1**x2<sup>0</sup> =  **1**x4 + **0**x2 + **1**x1 = 5. 
+>
+>**1**x2<sup>2</sup> + **0**x2<sup>1</sup> + **1**x2<sup>0</sup> =  **1**x4 + **0**x2 + **1**x1 = 5. 
 >
 >Since we've used three powers of 2, this is a *3-bit *binary number. The more powers of two we use the more numbers we can represent with our computer. The Hack computer, and thus the nandirl computer, is a *16-bit architecture*. Thus the smallest (unsigned) number we can represent is **0000 0000 0000 0000**:
 >
- >**0**x2^15^ +**0**x2^14^ + **0**x2^13^ + **0**x2^12^+ **0**x2^11^ +**0**x2^10^ + **0**x2^9^ + **0**x2^8^+ **0**x2^7^ +**0**x2^6^ + **0**x2^5^ + **0**x2^4^+ **0**x2^3^ +**0**x2^2^ + **0**x2^1^ + **0**x2^0^ = 0
+ >**0**x2<sup>15</sup> +**0**x2<sup>14</sup> + **0**x2<sup>13</sup> + **0**x2<sup>12</sup>+ **0**x2<sup>11</sup> +**0**x2<sup>10</sup> + **0**x2<sup>9</sup> + **0**x2<sup>8</sup>+ **0**x2<sup>7</sup> +**0**x2<sup>6</sup> + **0**x2<sup>5</sup> + **0**x2<sup>4</sup>+ **0**x2<sup>3</sup> +**0**x2<sup>2</sup> + **0**x2<sup>1</sup> + **0**x2<sup>0</sup> = 0
 >
 >and largest (unsigned) number our computer can represent is **1111 1111 1111 1111**:
 >
- >**1**x2^15^ +**1**x2^14^ + **1**x2^13^ + **1**x2^12^+ **1**x2^11^ +**1**x2^10^ + **1**x2^9^ + **1**x2^8^+ **1**x2^7^ +**1**x2^6^ + **1**x2^5^ + **1**x2^4^+ **1**x2^3^ +**1**x2^2^ + **1**x2^1^ + **1**x2^0^ = 65535
+ >**1**x2<sup>15</sup> +**1**x2<sup>14</sup> + **1**x2<sup>13</sup> + **1**x2<sup>12</sup>+ **1**x2<sup>11</sup> +**1**x2<sup>10</sup> + **1**x2<sup>9</sup> + **1**x2<sup>8</sup>+ **1**x2<sup>7</sup> +**1**x2<sup>6</sup> + **1**x2<sup>5</sup> + **1**x2<sup>4</sup>+ **1**x2<sup>3</sup> +**1**x2<sup>2</sup> + **1**x2<sup>1</sup> + **1**x2<sup>0</sup> = 65535
 >
->As it turns out, we can also represent every number in between with the right combination of 16 **1**'s and **0**'s, i.e. by adding the right combination of powers of 2 between 2^0^ and 2^15^! 
+>As it turns out, we can also represent every number in between with the right combination of 16 **1**'s and **0**'s, i.e. by adding the right combination of powers of 2 between 2<sup>0</sup> and 2<sup>15</sup>! 
 
 Back to the ROM chip. The *address* passed into the ROM chip takes the form of 16 digital electrical signals, each at either a low voltage (representing a 0) or a high voltage (representing a 1). That corresponds to a 16-bit binary number, thus our ROM chip can store 65536 unique instructions! The *instruction* output, similarly, takes the form of 16 digital electrical signals. Each of those 16 individual instruction signals are going to tell the CPU what to do.
 
@@ -39,6 +66,7 @@ In the computer architecture, the input *to* the RAM chip comes from the output 
 ### CPU
 So far the ROM and RAM chips appear only to store data. The CPU is where that data is manipulated. Here's a diagram showing the internals of the Hack CPU:
 ![ ](images/CPUarch.png  "Hack CPU Architecture")
+Source: [https://www.nand2tetris.org/course](https://www.nand2tetris.org/course) 
 #### ALU
 A good place to start breaking down the CPU architecture is the ALU, or Arithmetic Logic Unit. The ALU takes two 16-bit inputs, and provides one 16-bit output. As we'll see in more detail in a subsequent chapter, the ALU performs an operation on the two inputs and sends the result to its output. The ALU is designed to perform many different operations, and it knows which one to perform based on the instruction inputs (labeled "c's" going into the top of the ALU). These instructions are a subset of the 16 instruction bits that the ROM passes into the CPU. 
 
@@ -64,18 +92,7 @@ The final component in the architecture is the **Mux**, which is short for "mult
 
 ***
 
-Believe it or not, those are the only building blocks needed to create a simple computer from the ground up. We'll write programs for our computer, store them as addressed instructions in ROM, and let the computer execute them one-by-one. In my mind, at least, I think about this process like building a wind-up a toy, winding it up, putting it down, and letting it march its way through the world. In subsequent chapters I'll be building out each one of the major components in this architecture in real hardware. A preview is below!
-
-- Chapter 1: 1-bit Register
-- Chapter 2: 16-bit Register
-- Chapter 3: From Circuit Idea to Assembled PCB
-- Chapter 4: Program Counter
-- Chapter 5: Read-only Memory (ROM)
-- Chapter 6: Random Access Memory (RAM)
-- Chapter 7: Arithmetic Logic Unit (ALU)
-- Chapter 8: Clock Generator
-- Chapter 9: Motherboard
-- Chapter 10: Debugger
+Believe it or not, those are the only building blocks needed to create a simple computer from the ground up. We'll write programs for our computer, store them as addressed instructions in ROM, and let the computer execute them one-by-one. In my mind, at least, I think about this process like building a wind-up a toy, winding it up, putting it down, and letting it march its way through the world. In subsequent chapters I'll be building out each one of the major components in this architecture in real hardware.
 
 ## Chapter 1: 1-bit Register
 One of the most basic things a computer needs to do is remember things, and it does this by storing "bits" i.e. 0's and 1's. One of the core components of a computer processor that performs this remembering function is called a "register". A 1-bit register has the ability to store 1-bit of information, i.e. it remembers whether it is currently a 0 or currently a 1. There are a few key details of a 1-bit register:
