@@ -1,0 +1,2 @@
+## Chapter 2: 16-bit Register
+The nand2tetris computer is a 16-bit architecture. That means that data is passed around, stored, and manipulated in groups of 16-bits. The first full component of the computer I decided to take on is the 16-bit Register. It is, quite simply, a board that contains 16 1-bit registers where each register has its own Input and Output signals, but the Load and Clock signals are shared between all of them.
