@@ -67,7 +67,7 @@ def draw_plots():
 def ser_listen():
     inbuf = ''
     while True:
-        ch = ser.read()
+        ch = ser.read().decode('utf-8')
         if ch == ';':
             sp = inbuf.split(',')
             if len(sp) == 8:
@@ -89,7 +89,7 @@ th.daemon = True
 th.start()
 
 time.sleep(3)
-ser.write('1')
+ser.write('1'.encode())
 
 plt.show()
 
